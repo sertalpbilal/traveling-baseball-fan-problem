@@ -1,0 +1,50 @@
+objt: 0
+sdat: 2018-06-01
+edat: 2018-08-01
+mont: 2.0
+time: 25.743 days
+dist: 21503.000 miles
+cost: 5496.897 USD
+gams: 768
+vars: 22446
+cons: 800
+data: 47.133 secs
+prep: 189.693 secs
+solv: 175.492 secs
+sdis: 95 2-3
+ldis: 2025 8-9
+stim: 175.0 18-19
+ltim: 2220.0 8-9
+mcri: 41.0 18-19
+schd: [
+1,AT&T Park,Diamondbacks,Giants,San Francisco,2018-06-05 22:15:00,37.7785951,-122.38926979999998
+2,Petco Park,Braves,Padres,San Diego,2018-06-06 15:40:00,32.707656300000004,-117.15690430000001
+3,Angel Stadium of Anaheim,Royals,Angels,Anaheim,2018-06-06 22:07:00,33.800308,-117.8827321
+4,Oakland Coliseum,Royals,Athletics,Oakland,2018-06-07 22:05:00,37.7515946,-122.20054579999999
+5,Dodger Stadium,Braves,Dodgers,Los Angeles,2018-06-08 22:10:00,34.073851,-118.23995829999998
+6,Coors Field,Diamondbacks,Rockies,Denver,2018-06-09 19:15:00,39.755882299999996,-104.9941781
+7,Target Field,Angels,Twins,Minneapolis,2018-06-10 14:10:00,44.9817656,-93.277514
+8,Safeco Field,Angels,Mariners,Seattle,2018-06-11 22:10:00,47.5914026,-122.3325085
+9,Miller Park,Cubs,Brewers,Milwaukee,2018-06-13 14:10:00,43.0279776,-87.97115040000001
+10,Guaranteed Rate Field,Indians,White Sox,Chicago,2018-06-13 20:10:00,41.8299021,-87.6337522
+11,Citizens Bank Park,Rockies,Phillies,Philadelphia,2018-06-14 13:05:00,39.906057200000006,-75.1664952
+12,Yankee Stadium,Rays,Yankees,Bronx,2018-06-14 19:05:00,40.82964260000001,-73.9261745
+13,Kauffman Stadium,Astros,Royals,Kansas City,2018-06-15 20:15:00,39.051671899999995,-94.4803142
+14,Globe Life Park in Arlington,Rockies,Rangers,Arlington,2018-06-16 16:05:00,32.7512152,-97.083209
+15,Chase Field,Mets,Diamondbacks,Phoenix,2018-06-17 16:10:00,33.4455264,-112.06666409999998
+16,Minute Maid Park,Rays,Astros,Houston,2018-06-18 20:10:00,29.757269399999995,-95.3555143
+17,Great American Ball Park,Tigers,Reds,Cincinnati,2018-06-19 19:10:00,39.0979313,-84.508151
+18,Progressive Field,White Sox,Indians,Cleveland,2018-06-20 13:10:00,41.496210999999995,-81.68522890000001
+19,PNC Park,Brewers,Pirates,Pittsburgh,2018-06-20 19:05:00,40.4468548,-80.0056657
+20,Nationals Park,Orioles,Nationals,Washington,2018-06-21 19:05:00,38.8730102,-77.0074329
+21,Tropicana Field,Yankees,Rays,St. Petersburg,2018-06-22 19:10:00,27.768224600000003,-82.65339209999999
+22,SunTrust Park,Orioles,Braves,Atlanta,2018-06-23 16:10:00,33.8907854,-84.4677714
+23,Citi Field,Dodgers,Mets,Flushing,2018-06-24 13:10:00,40.75708770000001,-73.8458213
+24,Marlins Park,Diamondbacks,Marlins,Miami,2018-06-25 19:10:00,25.7783176,-80.219597
+25,Busch Stadium,Indians,Cardinals,St. Louis,2018-06-26 20:15:00,38.6226188,-90.1928209
+26,Comerica Park,Athletics,Tigers,Detroit,2018-06-27 19:10:00,42.3389984,-83.0485197
+27,Fenway Park,Angels,Red Sox,Boston,2018-06-28 19:10:00,42.3466764,-71.0972178
+28,Rogers Centre,Tigers,Blue Jays,Toronto,2018-06-29 19:07:00,43.6414378,-79.3893532
+29,Wrigley Field,Twins,Cubs,Chicago,2018-06-30 14:20:00,41.94843839999999,-87.6553327
+30,Oriole Park at Camden Yards,Angels,Orioles,Baltimore,2018-07-01 13:05:00,39.2834958,-76.62191640000002
+]

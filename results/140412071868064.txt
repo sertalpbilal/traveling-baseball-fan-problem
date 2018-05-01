@@ -1,0 +1,50 @@
+objt: 1
+sdat: 2018-04-01
+edat: 2018-07-01
+mont: 3.0
+time: 26.250 days
+dist: 12996.000 miles
+cost: 4712.100 USD
+gams: 1190
+vars: 35468
+cons: 1222
+data: 110.154 secs
+prep: 748.294 secs
+solv: 726.213 secs
+sdis: 38 9-10
+ldis: 1175 2-3
+stim: 180.0 4-5
+ltim: 1655.0 19-20
+mcri: 72.0 4-5
+schd: [
+1,Tropicana Field,Braves,Rays,St. Petersburg,2018-05-09 19:10:00,27.768224600000003,-82.65339209999999
+2,Marlins Park,Braves,Marlins,Miami,2018-05-10 19:10:00,25.7783176,-80.219597
+3,PNC Park,Giants,Pirates,Pittsburgh,2018-05-11 19:05:00,40.4468548,-80.0056657
+4,Yankee Stadium,Athletics,Yankees,Bronx,2018-05-12 13:05:00,40.82964260000001,-73.9261745
+5,Citizens Bank Park,Mets,Phillies,Philadelphia,2018-05-12 19:05:00,39.906057200000006,-75.1664952
+6,Rogers Centre,Red Sox,Blue Jays,Toronto,2018-05-13 13:07:00,43.6414378,-79.3893532
+7,Fenway Park,Athletics,Red Sox,Boston,2018-05-14 19:10:00,42.3466764,-71.0972178
+8,Citi Field,Blue Jays,Mets,Flushing,2018-05-15 19:10:00,40.75708770000001,-73.8458213
+9,Oriole Park at Camden Yards,Phillies,Orioles,Baltimore,2018-05-16 12:35:00,39.2834958,-76.62191640000002
+10,Nationals Park,Yankees,Nationals,Washington,2018-05-16 19:05:00,38.8730102,-77.0074329
+11,SunTrust Park,Cubs,Braves,Atlanta,2018-05-17 19:35:00,33.8907854,-84.4677714
+12,Busch Stadium,Phillies,Cardinals,St. Louis,2018-05-18 20:15:00,38.6226188,-90.1928209
+13,Kauffman Stadium,Yankees,Royals,Kansas City,2018-05-19 19:15:00,39.051671899999995,-94.4803142
+14,Minute Maid Park,Indians,Astros,Houston,2018-05-20 20:08:00,29.757269399999995,-95.3555143
+15,Globe Life Park in Arlington,Yankees,Rangers,Arlington,2018-05-21 20:05:00,32.7512152,-97.083209
+16,Target Field,Tigers,Twins,Minneapolis,2018-05-22 20:10:00,44.9817656,-93.277514
+17,Miller Park,Diamondbacks,Brewers,Milwaukee,2018-05-23 13:10:00,43.0279776,-87.97115040000001
+18,Guaranteed Rate Field,Orioles,White Sox,Chicago,2018-05-23 20:10:00,41.8299021,-87.6337522
+19,Great American Ball Park,Pirates,Reds,Cincinnati,2018-05-24 12:35:00,39.0979313,-84.508151
+20,Progressive Field,Astros,Indians,Cleveland,2018-05-25 19:10:00,41.496210999999995,-81.68522890000001
+21,Comerica Park,White Sox,Tigers,Detroit,2018-05-26 16:10:00,42.3389984,-83.0485197
+22,Wrigley Field,Giants,Cubs,Chicago,2018-05-27 20:08:00,41.94843839999999,-87.6553327
+23,Coors Field,Giants,Rockies,Denver,2018-05-28 19:10:00,39.755882299999996,-104.9941781
+24,Chase Field,Reds,Diamondbacks,Phoenix,2018-05-29 21:40:00,33.4455264,-112.06666409999998
+25,Dodger Stadium,Phillies,Dodgers,Los Angeles,2018-05-30 22:10:00,34.073851,-118.23995829999998
+26,Oakland Coliseum,Rays,Athletics,Oakland,2018-05-31 15:35:00,37.7515946,-122.20054579999999
+27,Safeco Field,Rays,Mariners,Seattle,2018-06-01 22:10:00,47.5914026,-122.3325085
+28,AT&T Park,Phillies,Giants,San Francisco,2018-06-02 22:05:00,37.7785951,-122.38926979999998
+29,Angel Stadium of Anaheim,Rangers,Angels,Anaheim,2018-06-03 16:07:00,33.800308,-117.8827321
+30,Petco Park,Braves,Padres,San Diego,2018-06-04 22:10:00,32.707656300000004,-117.15690430000001
+]

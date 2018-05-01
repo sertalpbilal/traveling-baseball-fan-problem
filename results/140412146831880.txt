@@ -1,0 +1,50 @@
+objt: 1
+sdat: 2018-06-01
+edat: 2018-08-01
+mont: 2.0
+time: 27.250 days
+dist: 13027.000 miles
+cost: 4845.200 USD
+gams: 768
+vars: 22446
+cons: 800
+data: 48.192 secs
+prep: 294.125 secs
+solv: 280.260 secs
+sdis: 38 14-15
+ldis: 1231 7-8
+stim: 175.0 9-10
+ltim: 1645.0 2-3
+mcri: 29.0 7-8
+schd: [
+1,Marlins Park,Giants,Marlins,Miami,2018-06-12 19:10:00,25.7783176,-80.219597
+2,Tropicana Field,Blue Jays,Rays,St. Petersburg,2018-06-13 13:10:00,27.768224600000003,-82.65339209999999
+3,SunTrust Park,Padres,Braves,Atlanta,2018-06-14 19:35:00,33.8907854,-84.4677714
+4,Busch Stadium,Cubs,Cardinals,St. Louis,2018-06-15 20:15:00,38.6226188,-90.1928209
+5,Kauffman Stadium,Astros,Royals,Kansas City,2018-06-16 14:15:00,39.051671899999995,-94.4803142
+6,Globe Life Park in Arlington,Rockies,Rangers,Arlington,2018-06-17 15:05:00,32.7512152,-97.083209
+7,Minute Maid Park,Rays,Astros,Houston,2018-06-18 20:10:00,29.757269399999995,-95.3555143
+8,Target Field,Red Sox,Twins,Minneapolis,2018-06-19 20:10:00,44.9817656,-93.277514
+9,Progressive Field,White Sox,Indians,Cleveland,2018-06-20 13:10:00,41.496210999999995,-81.68522890000001
+10,PNC Park,Brewers,Pirates,Pittsburgh,2018-06-20 19:05:00,40.4468548,-80.0056657
+11,Yankee Stadium,Mariners,Yankees,Bronx,2018-06-21 13:05:00,40.82964260000001,-73.9261745
+12,Fenway Park,Mariners,Red Sox,Boston,2018-06-22 19:10:00,42.3466764,-71.0972178
+13,Citi Field,Dodgers,Mets,Flushing,2018-06-23 19:15:00,40.75708770000001,-73.8458213
+14,Nationals Park,Phillies,Nationals,Washington,2018-06-24 13:35:00,38.8730102,-77.0074329
+15,Oriole Park at Camden Yards,Mariners,Orioles,Baltimore,2018-06-25 19:05:00,39.2834958,-76.62191640000002
+16,Citizens Bank Park,Yankees,Phillies,Philadelphia,2018-06-26 19:05:00,39.906057200000006,-75.1664952
+17,Miller Park,Royals,Brewers,Milwaukee,2018-06-27 14:10:00,43.0279776,-87.97115040000001
+18,Guaranteed Rate Field,Twins,White Sox,Chicago,2018-06-27 20:10:00,41.8299021,-87.6337522
+19,Comerica Park,Athletics,Tigers,Detroit,2018-06-28 13:10:00,42.3389984,-83.0485197
+20,Rogers Centre,Tigers,Blue Jays,Toronto,2018-06-29 19:07:00,43.6414378,-79.3893532
+21,Great American Ball Park,Brewers,Reds,Cincinnati,2018-06-30 16:10:00,39.0979313,-84.508151
+22,Wrigley Field,Twins,Cubs,Chicago,2018-07-01 14:20:00,41.94843839999999,-87.6553327
+23,Coors Field,Giants,Rockies,Denver,2018-07-02 20:40:00,39.755882299999996,-104.9941781
+24,Dodger Stadium,Pirates,Dodgers,Los Angeles,2018-07-03 22:10:00,34.073851,-118.23995829999998
+25,Oakland Coliseum,Padres,Athletics,Oakland,2018-07-04 16:05:00,37.7515946,-122.20054579999999
+26,Safeco Field,Angels,Mariners,Seattle,2018-07-05 22:10:00,47.5914026,-122.3325085
+27,AT&T Park,Cardinals,Giants,San Francisco,2018-07-06 22:15:00,37.7785951,-122.38926979999998
+28,Angel Stadium of Anaheim,Dodgers,Angels,Anaheim,2018-07-07 19:15:00,33.800308,-117.8827321
+29,Chase Field,Padres,Diamondbacks,Phoenix,2018-07-08 16:10:00,33.4455264,-112.06666409999998
+30,Petco Park,Dodgers,Padres,San Diego,2018-07-09 22:10:00,32.707656300000004,-117.15690430000001
+]
