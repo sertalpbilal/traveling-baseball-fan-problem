@@ -1,0 +1,871 @@
+'stad1','stad2','name','name','dist1'
+1,2,'Angels Stadium of Anaheim','Chase Field',357
+1,3,'Angels Stadium of Anaheim','SunTrust Park',2173
+1,4,'Angels Stadium of Anaheim','Oriole Park at Camden Yards',2642
+1,5,'Angels Stadium of Anaheim','Fenway Park',2987
+1,6,'Angels Stadium of Anaheim','Wrigley Field',2015
+1,7,'Angels Stadium of Anaheim','Guaranteed Rate Field',2014
+1,8,'Angels Stadium of Anaheim','Great American Ball Park',2182
+1,9,'Angels Stadium of Anaheim','Progressive Field',2341
+1,10,'Angels Stadium of Anaheim','Coors Field',1015
+1,11,'Angels Stadium of Anaheim','Comerica Park',2276
+1,12,'Angels Stadium of Anaheim','Marlins Park',2719
+1,13,'Angels Stadium of Anaheim','Minute Maid Park',1534
+1,14,'Angels Stadium of Anaheim','Kauffman Stadium',1620
+1,15,'Angels Stadium of Anaheim','Dodger Stadium',31
+1,16,'Angels Stadium of Anaheim','Miller Park',2049
+1,17,'Angels Stadium of Anaheim','Target Field',1922
+1,18,'Angels Stadium of Anaheim','Nationals Park',2664
+1,19,'Angels Stadium of Anaheim','Citi Field',2800
+1,20,'Angels Stadium of Anaheim','Yankee Stadium',2791
+1,21,'Angels Stadium of Anaheim','OAC Coliseum',394
+1,22,'Angels Stadium of Anaheim','Citizens Bank Park',2714
+1,23,'Angels Stadium of Anaheim','PNC Park',2425
+1,24,'Angels Stadium of Anaheim','PETCO Park',95
+1,25,'Angels Stadium of Anaheim','ATT Park',409
+1,26,'Angels Stadium of Anaheim','Safeco Field',1165
+1,27,'Angels Stadium of Anaheim','Busch Stadium',1825
+1,28,'Angels Stadium of Anaheim','Tropicana Field',2535
+1,29,'Angels Stadium of Anaheim','Globe Life Park in Arlington',1405
+1,30,'Angels Stadium of Anaheim','Rogers Centre',2507
+2,1,'Chase Field','Angels Stadium of Anaheim',357
+2,3,'Chase Field','SunTrust Park',1858
+2,4,'Chase Field','Oriole Park at Camden Yards',2326
+2,5,'Chase Field','Fenway Park',2686
+2,6,'Chase Field','Wrigley Field',1812
+2,7,'Chase Field','Guaranteed Rate Field',1804
+2,8,'Chase Field','Great American Ball Park',1867
+2,9,'Chase Field','Progressive Field',2068
+2,10,'Chase Field','Coors Field',826
+2,11,'Chase Field','Comerica Park',2033
+2,12,'Chase Field','Marlins Park',2362
+2,13,'Chase Field','Minute Maid Park',1177
+2,14,'Chase Field','Kauffman Stadium',1362
+2,15,'Chase Field','Dodger Stadium',375
+2,16,'Chase Field','Miller Park',1885
+2,17,'Chase Field','Target Field',1796
+2,18,'Chase Field','Nationals Park',2349
+2,19,'Chase Field','Citi Field',2473
+2,20,'Chase Field','Yankee Stadium',2470
+2,21,'Chase Field','OAC Coliseum',736
+2,22,'Chase Field','Citizens Bank Park',2399
+2,23,'Chase Field','PNC Park',2110
+2,24,'Chase Field','PETCO Park',356
+2,25,'Chase Field','ATT Park',751
+2,26,'Chase Field','Safeco Field',1507
+2,27,'Chase Field','Busch Stadium',1510
+2,28,'Chase Field','Tropicana Field',2179
+2,29,'Chase Field','Globe Life Park in Arlington',1048
+2,30,'Chase Field','Rogers Centre',2262
+3,1,'SunTrust Park','Angels Stadium of Anaheim',2173
+3,2,'SunTrust Park','Chase Field',1858
+3,4,'SunTrust Park','Oriole Park at Camden Yards',676
+3,5,'SunTrust Park','Fenway Park',1091
+3,6,'SunTrust Park','Wrigley Field',710
+3,7,'SunTrust Park','Guaranteed Rate Field',704
+3,8,'SunTrust Park','Great American Ball Park',449
+3,9,'SunTrust Park','Progressive Field',699
+3,10,'SunTrust Park','Coors Field',1392
+3,11,'SunTrust Park','Comerica Park',711
+3,12,'SunTrust Park','Marlins Park',675
+3,13,'SunTrust Park','Minute Maid Park',800
+3,14,'SunTrust Park','Kauffman Stadium',783
+3,15,'SunTrust Park','Dodger Stadium',2182
+3,16,'SunTrust Park','Miller Park',805
+3,17,'SunTrust Park','Target Field',1102
+3,18,'SunTrust Park','Nationals Park',639
+3,19,'SunTrust Park','Citi Field',893
+3,20,'SunTrust Park','Yankee Stadium',891
+3,21,'SunTrust Park','OAC Coliseum',2464
+3,22,'SunTrust Park','Citizens Bank Park',772
+3,23,'SunTrust Park','PNC Park',685
+3,24,'SunTrust Park','PETCO Park',2145
+3,25,'SunTrust Park','ATT Park',2479
+3,26,'SunTrust Park','Safeco Field',2686
+3,27,'SunTrust Park','Busch Stadium',543
+3,28,'SunTrust Park','Tropicana Field',491
+3,29,'SunTrust Park','Globe Life Park in Arlington',802
+3,30,'SunTrust Park','Rogers Centre',940
+4,1,'Oriole Park at Camden Yards','Angels Stadium of Anaheim',2642
+4,2,'Oriole Park at Camden Yards','Chase Field',2326
+4,3,'Oriole Park at Camden Yards','SunTrust Park',676
+4,5,'Oriole Park at Camden Yards','Fenway Park',400
+4,6,'Oriole Park at Camden Yards','Wrigley Field',707
+4,7,'Oriole Park at Camden Yards','Guaranteed Rate Field',697
+4,8,'Oriole Park at Camden Yards','Great American Ball Park',515
+4,9,'Oriole Park at Camden Yards','Progressive Field',374
+4,10,'Oriole Park at Camden Yards','Coors Field',1670
+4,11,'Oriole Park at Camden Yards','Comerica Park',526
+4,12,'Oriole Park at Camden Yards','Marlins Park',1094
+4,13,'Oriole Park at Camden Yards','Minute Maid Park',1445
+4,14,'Oriole Park at Camden Yards','Kauffman Stadium',1061
+4,15,'Oriole Park at Camden Yards','Dodger Stadium',2659
+4,16,'Oriole Park at Camden Yards','Miller Park',794
+4,17,'Oriole Park at Camden Yards','Target Field',1117
+4,18,'Oriole Park at Camden Yards','Nationals Park',38
+4,19,'Oriole Park at Camden Yards','Citi Field',206
+4,20,'Oriole Park at Camden Yards','Yankee Stadium',200
+4,21,'Oriole Park at Camden Yards','OAC Coliseum',2817
+4,22,'Oriole Park at Camden Yards','Citizens Bank Park',100
+4,23,'Oriole Park at Camden Yards','PNC Park',247
+4,24,'Oriole Park at Camden Yards','PETCO Park',2679
+4,25,'Oriole Park at Camden Yards','ATT Park',2815
+4,26,'Oriole Park at Camden Yards','Safeco Field',2808
+4,27,'Oriole Park at Camden Yards','Busch Stadium',828
+4,28,'Oriole Park at Camden Yards','Tropicana Field',967
+4,29,'Oriole Park at Camden Yards','Globe Life Park in Arlington',1379
+4,30,'Oriole Park at Camden Yards','Rogers Centre',466
+5,1,'Fenway Park','Angels Stadium of Anaheim',2987
+5,2,'Fenway Park','Chase Field',2686
+5,3,'Fenway Park','SunTrust Park',1091
+5,4,'Fenway Park','Oriole Park at Camden Yards',400
+5,6,'Fenway Park','Wrigley Field',996
+5,7,'Fenway Park','Guaranteed Rate Field',987
+5,8,'Fenway Park','Great American Ball Park',868
+5,9,'Fenway Park','Progressive Field',638
+5,10,'Fenway Park','Coors Field',1978
+5,11,'Fenway Park','Comerica Park',705
+5,12,'Fenway Park','Marlins Park',1494
+5,13,'Fenway Park','Minute Maid Park',1843
+5,14,'Fenway Park','Kauffman Stadium',1410
+5,15,'Fenway Park','Dodger Stadium',2996
+5,16,'Fenway Park','Miller Park',1084
+5,17,'Fenway Park','Target Field',1406
+5,18,'Fenway Park','Nationals Park',439
+5,19,'Fenway Park','Citi Field',204
+5,20,'Fenway Park','Yankee Stadium',204
+5,21,'Fenway Park','OAC Coliseum',3107
+5,22,'Fenway Park','Citizens Bank Park',310
+5,23,'Fenway Park','PNC Park',571
+5,24,'Fenway Park','PETCO Park',3056
+5,25,'Fenway Park','ATT Park',3105
+5,26,'Fenway Park','Safeco Field',3097
+5,27,'Fenway Park','Busch Stadium',1177
+5,28,'Fenway Park','Tropicana Field',1368
+5,29,'Fenway Park','Globe Life Park in Arlington',1777
+5,30,'Fenway Park','Rogers Centre',547
+6,1,'Wrigley Field','Angels Stadium of Anaheim',2015
+6,2,'Wrigley Field','Chase Field',1812
+6,3,'Wrigley Field','SunTrust Park',710
+6,4,'Wrigley Field','Oriole Park at Camden Yards',707
+6,5,'Wrigley Field','Fenway Park',996
+6,7,'Wrigley Field','Guaranteed Rate Field',10
+6,8,'Wrigley Field','Great American Ball Park',298
+6,9,'Wrigley Field','Progressive Field',352
+6,10,'Wrigley Field','Coors Field',1006
+6,11,'Wrigley Field','Comerica Park',288
+6,12,'Wrigley Field','Marlins Park',1378
+6,13,'Wrigley Field','Minute Maid Park',1106
+6,14,'Wrigley Field','Kauffman Stadium',532
+6,15,'Wrigley Field','Dodger Stadium',2023
+6,16,'Wrigley Field','Miller Park',91
+6,17,'Wrigley Field','Target Field',405
+6,18,'Wrigley Field','Nationals Park',706
+6,19,'Wrigley Field','Citi Field',810
+6,20,'Wrigley Field','Yankee Stadium',802
+6,21,'Wrigley Field','OAC Coliseum',2134
+6,22,'Wrigley Field','Citizens Bank Park',770
+6,23,'Wrigley Field','PNC Park',467
+6,24,'Wrigley Field','PETCO Park',2083
+6,25,'Wrigley Field','ATT Park',2132
+6,26,'Wrigley Field','Safeco Field',2097
+6,27,'Wrigley Field','Busch Stadium',302
+6,28,'Wrigley Field','Tropicana Field',1194
+6,29,'Wrigley Field','Globe Life Park in Arlington',970
+6,30,'Wrigley Field','Rogers Centre',519
+7,1,'Guaranteed Rate Field','Angels Stadium of Anaheim',2014
+7,2,'Guaranteed Rate Field','Chase Field',1804
+7,3,'Guaranteed Rate Field','SunTrust Park',704
+7,4,'Guaranteed Rate Field','Oriole Park at Camden Yards',697
+7,5,'Guaranteed Rate Field','Fenway Park',987
+7,6,'Guaranteed Rate Field','Wrigley Field',10
+7,8,'Guaranteed Rate Field','Great American Ball Park',289
+7,9,'Guaranteed Rate Field','Progressive Field',342
+7,10,'Guaranteed Rate Field','Coors Field',1005
+7,11,'Guaranteed Rate Field','Comerica Park',279
+7,12,'Guaranteed Rate Field','Marlins Park',1369
+7,13,'Guaranteed Rate Field','Minute Maid Park',1096
+7,14,'Guaranteed Rate Field','Kauffman Stadium',531
+7,15,'Guaranteed Rate Field','Dodger Stadium',2022
+7,16,'Guaranteed Rate Field','Miller Park',98
+7,17,'Guaranteed Rate Field','Target Field',412
+7,18,'Guaranteed Rate Field','Nationals Park',697
+7,19,'Guaranteed Rate Field','Citi Field',801
+7,20,'Guaranteed Rate Field','Yankee Stadium',792
+7,21,'Guaranteed Rate Field','OAC Coliseum',2133
+7,22,'Guaranteed Rate Field','Citizens Bank Park',761
+7,23,'Guaranteed Rate Field','PNC Park',458
+7,24,'Guaranteed Rate Field','PETCO Park',2083
+7,25,'Guaranteed Rate Field','ATT Park',2131
+7,26,'Guaranteed Rate Field','Safeco Field',2104
+7,27,'Guaranteed Rate Field','Busch Stadium',296
+7,28,'Guaranteed Rate Field','Tropicana Field',1185
+7,29,'Guaranteed Rate Field','Globe Life Park in Arlington',982
+7,30,'Guaranteed Rate Field','Rogers Centre',509
+8,1,'Great American Ball Park','Angels Stadium of Anaheim',2182
+8,2,'Great American Ball Park','Chase Field',1867
+8,3,'Great American Ball Park','SunTrust Park',449
+8,4,'Great American Ball Park','Oriole Park at Camden Yards',515
+8,5,'Great American Ball Park','Fenway Park',868
+8,6,'Great American Ball Park','Wrigley Field',298
+8,7,'Great American Ball Park','Guaranteed Rate Field',289
+8,9,'Great American Ball Park','Progressive Field',250
+8,10,'Great American Ball Park','Coors Field',1193
+8,11,'Great American Ball Park','Comerica Park',263
+8,12,'Great American Ball Park','Marlins Park',1123
+8,13,'Great American Ball Park','Minute Maid Park',1125
+8,14,'Great American Ball Park','Kauffman Stadium',584
+8,15,'Great American Ball Park','Dodger Stadium',2190
+8,16,'Great American Ball Park','Miller Park',392
+8,17,'Great American Ball Park','Target Field',703
+8,18,'Great American Ball Park','Nationals Park',502
+8,19,'Great American Ball Park','Citi Field',651
+8,20,'Great American Ball Park','Yankee Stadium',649
+8,21,'Great American Ball Park','OAC Coliseum',2384
+8,22,'Great American Ball Park','Citizens Bank Park',577
+8,23,'Great American Ball Park','PNC Park',289
+8,24,'Great American Ball Park','PETCO Park',2210
+8,25,'Great American Ball Park','ATT Park',2382
+8,26,'Great American Ball Park','Safeco Field',2386
+8,27,'Great American Ball Park','Busch Stadium',358
+8,28,'Great American Ball Park','Tropicana Field',939
+8,29,'Great American Ball Park','Globe Life Park in Arlington',948
+8,30,'Great American Ball Park','Rogers Centre',492
+9,1,'Progressive Field','Angels Stadium of Anaheim',2341
+9,2,'Progressive Field','Chase Field',2068
+9,3,'Progressive Field','SunTrust Park',699
+9,4,'Progressive Field','Oriole Park at Camden Yards',374
+9,5,'Progressive Field','Fenway Park',638
+9,6,'Progressive Field','Wrigley Field',352
+9,7,'Progressive Field','Guaranteed Rate Field',342
+9,8,'Progressive Field','Great American Ball Park',250
+9,10,'Progressive Field','Coors Field',1332
+9,11,'Progressive Field','Comerica Park',168
+9,12,'Progressive Field','Marlins Park',1242
+9,13,'Progressive Field','Minute Maid Park',1374
+9,14,'Progressive Field','Kauffman Stadium',791
+9,15,'Progressive Field','Dodger Stadium',2349
+9,16,'Progressive Field','Miller Park',437
+9,17,'Progressive Field','Target Field',760
+9,18,'Progressive Field','Nationals Park',372
+9,19,'Progressive Field','Citi Field',477
+9,20,'Progressive Field','Yankee Stadium',468
+9,21,'Progressive Field','OAC Coliseum',2460
+9,22,'Progressive Field','Citizens Bank Park',436
+9,23,'Progressive Field','PNC Park',134
+9,24,'Progressive Field','PETCO Park',2410
+9,25,'Progressive Field','ATT Park',2458
+9,26,'Progressive Field','Safeco Field',2451
+9,27,'Progressive Field','Busch Stadium',558
+9,28,'Progressive Field','Tropicana Field',1115
+9,29,'Progressive Field','Globe Life Park in Arlington',1197
+9,30,'Progressive Field','Rogers Centre',287
+10,1,'Coors Field','Angels Stadium of Anaheim',1015
+10,2,'Coors Field','Chase Field',826
+10,3,'Coors Field','SunTrust Park',1392
+10,4,'Coors Field','Oriole Park at Camden Yards',1670
+10,5,'Coors Field','Fenway Park',1978
+10,6,'Coors Field','Wrigley Field',1006
+10,7,'Coors Field','Guaranteed Rate Field',1005
+10,8,'Coors Field','Great American Ball Park',1193
+10,9,'Coors Field','Progressive Field',1332
+10,11,'Coors Field','Comerica Park',1268
+10,12,'Coors Field','Marlins Park',2064
+10,13,'Coors Field','Minute Maid Park',1120
+10,14,'Coors Field','Kauffman Stadium',609
+10,15,'Coors Field','Dodger Stadium',1020
+10,16,'Coors Field','Miller Park',1040
+10,17,'Coors Field','Target Field',913
+10,18,'Coors Field','Nationals Park',1657
+10,19,'Coors Field','Citi Field',1791
+10,20,'Coors Field','Yankee Stadium',1783
+10,21,'Coors Field','OAC Coliseum',1265
+10,22,'Coors Field','Citizens Bank Park',1732
+10,23,'Coors Field','PNC Park',1444
+10,24,'Coors Field','PETCO Park',1080
+10,25,'Coors Field','ATT Park',1263
+10,26,'Coors Field','Safeco Field',1331
+10,27,'Coors Field','Busch Stadium',850
+10,28,'Coors Field','Tropicana Field',1880
+10,29,'Coors Field','Globe Life Park in Arlington',881
+10,30,'Coors Field','Rogers Centre',1498
+11,1,'Comerica Park','Angels Stadium of Anaheim',2276
+11,2,'Comerica Park','Chase Field',2033
+11,3,'Comerica Park','SunTrust Park',711
+11,4,'Comerica Park','Oriole Park at Camden Yards',526
+11,5,'Comerica Park','Fenway Park',705
+11,6,'Comerica Park','Wrigley Field',288
+11,7,'Comerica Park','Guaranteed Rate Field',279
+11,8,'Comerica Park','Great American Ball Park',263
+11,9,'Comerica Park','Progressive Field',168
+11,10,'Comerica Park','Coors Field',1268
+11,12,'Comerica Park','Marlins Park',1395
+11,13,'Comerica Park','Minute Maid Park',1313
+11,14,'Comerica Park','Kauffman Stadium',757
+11,15,'Comerica Park','Dodger Stadium',2285
+11,16,'Comerica Park','Miller Park',384
+11,17,'Comerica Park','Target Field',695
+11,18,'Comerica Park','Nationals Park',524
+11,19,'Comerica Park','Citi Field',628
+11,20,'Comerica Park','Yankee Stadium',619
+11,21,'Comerica Park','OAC Coliseum',2396
+11,22,'Comerica Park','Citizens Bank Park',588
+11,23,'Comerica Park','PNC Park',285
+11,24,'Comerica Park','PETCO Park',2345
+11,25,'Comerica Park','ATT Park',2394
+11,26,'Comerica Park','Safeco Field',2387
+11,27,'Comerica Park','Busch Stadium',524
+11,28,'Comerica Park','Tropicana Field',1198
+11,29,'Comerica Park','Globe Life Park in Arlington',1199
+11,30,'Comerica Park','Rogers Centre',230
+12,1,'Marlins Park','Angels Stadium of Anaheim',2719
+12,2,'Marlins Park','Chase Field',2362
+12,3,'Marlins Park','SunTrust Park',675
+12,4,'Marlins Park','Oriole Park at Camden Yards',1094
+12,5,'Marlins Park','Fenway Park',1494
+12,6,'Marlins Park','Wrigley Field',1378
+12,7,'Marlins Park','Guaranteed Rate Field',1369
+12,8,'Marlins Park','Great American Ball Park',1123
+12,9,'Marlins Park','Progressive Field',1242
+12,10,'Marlins Park','Coors Field',2064
+12,11,'Marlins Park','Comerica Park',1395
+12,13,'Marlins Park','Minute Maid Park',1186
+12,14,'Marlins Park','Kauffman Stadium',1457
+12,15,'Marlins Park','Dodger Stadium',2737
+12,16,'Marlins Park','Miller Park',1479
+12,17,'Marlins Park','Target Field',1776
+12,18,'Marlins Park','Nationals Park',1057
+12,19,'Marlins Park','Citi Field',1296
+12,20,'Marlins Park','Yankee Stadium',1290
+12,21,'Marlins Park','OAC Coliseum',3124
+12,22,'Marlins Park','Citizens Bank Park',1190
+12,23,'Marlins Park','PNC Park',1175
+12,24,'Marlins Park','PETCO Park',2658
+12,25,'Marlins Park','ATT Park',3139
+12,26,'Marlins Park','Safeco Field',3360
+12,27,'Marlins Park','Busch Stadium',1217
+12,28,'Marlins Park','Tropicana Field',266
+12,29,'Marlins Park','Globe Life Park in Arlington',1362
+12,30,'Marlins Park','Rogers Centre',1481
+13,1,'Minute Maid Park','Angels Stadium of Anaheim',1534
+13,2,'Minute Maid Park','Chase Field',1177
+13,3,'Minute Maid Park','SunTrust Park',800
+13,4,'Minute Maid Park','Oriole Park at Camden Yards',1445
+13,5,'Minute Maid Park','Fenway Park',1843
+13,6,'Minute Maid Park','Wrigley Field',1106
+13,7,'Minute Maid Park','Guaranteed Rate Field',1096
+13,8,'Minute Maid Park','Great American Ball Park',1125
+13,9,'Minute Maid Park','Progressive Field',1374
+13,10,'Minute Maid Park','Coors Field',1120
+13,11,'Minute Maid Park','Comerica Park',1313
+13,12,'Minute Maid Park','Marlins Park',1186
+13,14,'Minute Maid Park','Kauffman Stadium',797
+13,15,'Minute Maid Park','Dodger Stadium',1552
+13,16,'Minute Maid Park','Miller Park',1192
+13,17,'Minute Maid Park','Target Field',1231
+13,18,'Minute Maid Park','Nationals Park',1413
+13,19,'Minute Maid Park','Citi Field',1643
+13,20,'Minute Maid Park','Yankee Stadium',1641
+13,21,'Minute Maid Park','OAC Coliseum',1913
+13,22,'Minute Maid Park','Citizens Bank Park',1545
+13,23,'Minute Maid Park','PNC Park',1414
+13,24,'Minute Maid Park','PETCO Park',1472
+13,25,'Minute Maid Park','ATT Park',1928
+13,26,'Minute Maid Park','Safeco Field',2443
+13,27,'Minute Maid Park','Busch Stadium',851
+13,28,'Minute Maid Park','Tropicana Field',1003
+13,29,'Minute Maid Park','Globe Life Park in Arlington',257
+13,30,'Minute Maid Park','Rogers Centre',1543
+14,1,'Kauffman Stadium','Angels Stadium of Anaheim',1620
+14,2,'Kauffman Stadium','Chase Field',1362
+14,3,'Kauffman Stadium','SunTrust Park',783
+14,4,'Kauffman Stadium','Oriole Park at Camden Yards',1061
+14,5,'Kauffman Stadium','Fenway Park',1410
+14,6,'Kauffman Stadium','Wrigley Field',532
+14,7,'Kauffman Stadium','Guaranteed Rate Field',531
+14,8,'Kauffman Stadium','Great American Ball Park',584
+14,9,'Kauffman Stadium','Progressive Field',791
+14,10,'Kauffman Stadium','Coors Field',609
+14,11,'Kauffman Stadium','Comerica Park',757
+14,12,'Kauffman Stadium','Marlins Park',1457
+14,13,'Kauffman Stadium','Minute Maid Park',797
+14,15,'Kauffman Stadium','Dodger Stadium',1630
+14,16,'Kauffman Stadium','Miller Park',566
+14,17,'Kauffman Stadium','Target Field',439
+14,18,'Kauffman Stadium','Nationals Park',1049
+14,19,'Kauffman Stadium','Citi Field',1198
+14,20,'Kauffman Stadium','Yankee Stadium',1196
+14,21,'Kauffman Stadium','OAC Coliseum',1813
+14,22,'Kauffman Stadium','Citizens Bank Park',1124
+14,23,'Kauffman Stadium','PNC Park',835
+14,24,'Kauffman Stadium','PETCO Park',1690
+14,25,'Kauffman Stadium','ATT Park',1811
+14,26,'Kauffman Stadium','Safeco Field',1901
+14,27,'Kauffman Stadium','Busch Stadium',242
+14,28,'Kauffman Stadium','Tropicana Field',1272
+14,29,'Kauffman Stadium','Globe Life Park in Arlington',559
+14,30,'Kauffman Stadium','Rogers Centre',987
+15,1,'Dodger Stadium','Angels Stadium of Anaheim',31
+15,2,'Dodger Stadium','Chase Field',375
+15,3,'Dodger Stadium','SunTrust Park',2182
+15,4,'Dodger Stadium','Oriole Park at Camden Yards',2659
+15,5,'Dodger Stadium','Fenway Park',2996
+15,6,'Dodger Stadium','Wrigley Field',2023
+15,7,'Dodger Stadium','Guaranteed Rate Field',2022
+15,8,'Dodger Stadium','Great American Ball Park',2190
+15,9,'Dodger Stadium','Progressive Field',2349
+15,10,'Dodger Stadium','Coors Field',1020
+15,11,'Dodger Stadium','Comerica Park',2285
+15,12,'Dodger Stadium','Marlins Park',2737
+15,13,'Dodger Stadium','Minute Maid Park',1552
+15,14,'Dodger Stadium','Kauffman Stadium',1630
+15,16,'Dodger Stadium','Miller Park',2056
+15,17,'Dodger Stadium','Target Field',1930
+15,18,'Dodger Stadium','Nationals Park',2672
+15,19,'Dodger Stadium','Citi Field',2807
+15,20,'Dodger Stadium','Yankee Stadium',2799
+15,21,'Dodger Stadium','OAC Coliseum',366
+15,22,'Dodger Stadium','Citizens Bank Park',2721
+15,23,'Dodger Stadium','PNC Park',2433
+15,24,'Dodger Stadium','PETCO Park',124
+15,25,'Dodger Stadium','ATT Park',381
+15,26,'Dodger Stadium','Safeco Field',1136
+15,27,'Dodger Stadium','Busch Stadium',1832
+15,28,'Dodger Stadium','Tropicana Field',2553
+15,29,'Dodger Stadium','Globe Life Park in Arlington',1423
+15,30,'Dodger Stadium','Rogers Centre',2514
+16,1,'Miller Park','Angels Stadium of Anaheim',2049
+16,2,'Miller Park','Chase Field',1885
+16,3,'Miller Park','SunTrust Park',805
+16,4,'Miller Park','Oriole Park at Camden Yards',794
+16,5,'Miller Park','Fenway Park',1084
+16,6,'Miller Park','Wrigley Field',91
+16,7,'Miller Park','Guaranteed Rate Field',98
+16,8,'Miller Park','Great American Ball Park',392
+16,9,'Miller Park','Progressive Field',437
+16,10,'Miller Park','Coors Field',1040
+16,11,'Miller Park','Comerica Park',384
+16,12,'Miller Park','Marlins Park',1479
+16,13,'Miller Park','Minute Maid Park',1192
+16,14,'Miller Park','Kauffman Stadium',566
+16,15,'Miller Park','Dodger Stadium',2056
+16,17,'Miller Park','Target Field',334
+16,18,'Miller Park','Nationals Park',791
+16,19,'Miller Park','Citi Field',895
+16,20,'Miller Park','Yankee Stadium',886
+16,21,'Miller Park','OAC Coliseum',2168
+16,22,'Miller Park','Citizens Bank Park',854
+16,23,'Miller Park','PNC Park',552
+16,24,'Miller Park','PETCO Park',2117
+16,25,'Miller Park','ATT Park',2166
+16,26,'Miller Park','Safeco Field',2025
+16,27,'Miller Park','Busch Stadium',377
+16,28,'Miller Park','Tropicana Field',1288
+16,29,'Miller Park','Globe Life Park in Arlington',1045
+16,30,'Miller Park','Rogers Centre',603
+17,1,'Target Field','Angels Stadium of Anaheim',1922
+17,2,'Target Field','Chase Field',1796
+17,3,'Target Field','SunTrust Park',1102
+17,4,'Target Field','Oriole Park at Camden Yards',1117
+17,5,'Target Field','Fenway Park',1406
+17,6,'Target Field','Wrigley Field',405
+17,7,'Target Field','Guaranteed Rate Field',412
+17,8,'Target Field','Great American Ball Park',703
+17,9,'Target Field','Progressive Field',760
+17,10,'Target Field','Coors Field',913
+17,11,'Target Field','Comerica Park',695
+17,12,'Target Field','Marlins Park',1776
+17,13,'Target Field','Minute Maid Park',1231
+17,14,'Target Field','Kauffman Stadium',439
+17,15,'Target Field','Dodger Stadium',1930
+17,16,'Target Field','Miller Park',334
+17,18,'Target Field','Nationals Park',1109
+17,19,'Target Field','Citi Field',1213
+17,20,'Target Field','Yankee Stadium',1204
+17,21,'Target Field','OAC Coliseum',2041
+17,22,'Target Field','Citizens Bank Park',1173
+17,23,'Target Field','PNC Park',870
+17,24,'Target Field','PETCO Park',1991
+17,25,'Target Field','ATT Park',2039
+17,26,'Target Field','Safeco Field',1658
+17,27,'Target Field','Busch Stadium',562
+17,28,'Target Field','Tropicana Field',1593
+17,29,'Target Field','Globe Life Park in Arlington',993
+17,30,'Target Field','Rogers Centre',925
+18,1,'Nationals Park','Angels Stadium of Anaheim',2664
+18,2,'Nationals Park','Chase Field',2349
+18,3,'Nationals Park','SunTrust Park',639
+18,4,'Nationals Park','Oriole Park at Camden Yards',38
+18,5,'Nationals Park','Fenway Park',439
+18,6,'Nationals Park','Wrigley Field',706
+18,7,'Nationals Park','Guaranteed Rate Field',697
+18,8,'Nationals Park','Great American Ball Park',502
+18,9,'Nationals Park','Progressive Field',372
+18,10,'Nationals Park','Coors Field',1657
+18,11,'Nationals Park','Comerica Park',524
+18,12,'Nationals Park','Marlins Park',1057
+18,13,'Nationals Park','Minute Maid Park',1413
+18,14,'Nationals Park','Kauffman Stadium',1049
+18,15,'Nationals Park','Dodger Stadium',2672
+18,16,'Nationals Park','Miller Park',791
+18,17,'Nationals Park','Target Field',1109
+18,19,'Nationals Park','Citi Field',240
+18,20,'Nationals Park','Yankee Stadium',235
+18,21,'Nationals Park','OAC Coliseum',2816
+18,22,'Nationals Park','Citizens Bank Park',134
+18,23,'Nationals Park','PNC Park',246
+18,24,'Nationals Park','PETCO Park',2694
+18,25,'Nationals Park','ATT Park',2814
+18,26,'Nationals Park','Safeco Field',2806
+18,27,'Nationals Park','Busch Stadium',826
+18,28,'Nationals Park','Tropicana Field',930
+18,29,'Nationals Park','Globe Life Park in Arlington',1347
+18,30,'Nationals Park','Rogers Centre',492
+19,1,'Citi Field','Angels Stadium of Anaheim',2800
+19,2,'Citi Field','Chase Field',2473
+19,3,'Citi Field','SunTrust Park',893
+19,4,'Citi Field','Oriole Park at Camden Yards',206
+19,5,'Citi Field','Fenway Park',204
+19,6,'Citi Field','Wrigley Field',810
+19,7,'Citi Field','Guaranteed Rate Field',801
+19,8,'Citi Field','Great American Ball Park',651
+19,9,'Citi Field','Progressive Field',477
+19,10,'Citi Field','Coors Field',1791
+19,11,'Citi Field','Comerica Park',628
+19,12,'Citi Field','Marlins Park',1296
+19,13,'Citi Field','Minute Maid Park',1643
+19,14,'Citi Field','Kauffman Stadium',1198
+19,15,'Citi Field','Dodger Stadium',2807
+19,16,'Citi Field','Miller Park',895
+19,17,'Citi Field','Target Field',1213
+19,18,'Citi Field','Nationals Park',240
+19,20,'Citi Field','Yankee Stadium',9
+19,21,'Citi Field','OAC Coliseum',2920
+19,22,'Citi Field','Citizens Bank Park',109
+19,23,'Citi Field','PNC Park',381
+19,24,'Citi Field','PETCO Park',2869
+19,25,'Citi Field','ATT Park',2918
+19,26,'Citi Field','Safeco Field',2911
+19,27,'Citi Field','Busch Stadium',962
+19,28,'Citi Field','Tropicana Field',1167
+19,29,'Citi Field','Globe Life Park in Arlington',1574
+19,30,'Citi Field','Rogers Centre',492
+20,1,'Yankee Stadium','Angels Stadium of Anaheim',2791
+20,2,'Yankee Stadium','Chase Field',2470
+20,3,'Yankee Stadium','SunTrust Park',891
+20,4,'Yankee Stadium','Oriole Park at Camden Yards',200
+20,5,'Yankee Stadium','Fenway Park',204
+20,6,'Yankee Stadium','Wrigley Field',802
+20,7,'Yankee Stadium','Guaranteed Rate Field',792
+20,8,'Yankee Stadium','Great American Ball Park',649
+20,9,'Yankee Stadium','Progressive Field',468
+20,10,'Yankee Stadium','Coors Field',1783
+20,11,'Yankee Stadium','Comerica Park',619
+20,12,'Yankee Stadium','Marlins Park',1290
+20,13,'Yankee Stadium','Minute Maid Park',1641
+20,14,'Yankee Stadium','Kauffman Stadium',1196
+20,15,'Yankee Stadium','Dodger Stadium',2799
+20,16,'Yankee Stadium','Miller Park',886
+20,17,'Yankee Stadium','Target Field',1204
+20,18,'Yankee Stadium','Nationals Park',235
+20,19,'Yankee Stadium','Citi Field',9
+20,21,'Yankee Stadium','OAC Coliseum',2912
+20,22,'Yankee Stadium','Citizens Bank Park',108
+20,23,'Yankee Stadium','PNC Park',376
+20,24,'Yankee Stadium','PETCO Park',2861
+20,25,'Yankee Stadium','ATT Park',2910
+20,26,'Yankee Stadium','Safeco Field',2902
+20,27,'Yankee Stadium','Busch Stadium',963
+20,28,'Yankee Stadium','Tropicana Field',1166
+20,29,'Yankee Stadium','Globe Life Park in Arlington',1575
+20,30,'Yankee Stadium','Rogers Centre',483
+21,1,'OAC Coliseum','Angels Stadium of Anaheim',394
+21,2,'OAC Coliseum','Chase Field',736
+21,3,'OAC Coliseum','SunTrust Park',2464
+21,4,'OAC Coliseum','Oriole Park at Camden Yards',2817
+21,5,'OAC Coliseum','Fenway Park',3107
+21,6,'OAC Coliseum','Wrigley Field',2134
+21,7,'OAC Coliseum','Guaranteed Rate Field',2133
+21,8,'OAC Coliseum','Great American Ball Park',2384
+21,9,'OAC Coliseum','Progressive Field',2460
+21,10,'OAC Coliseum','Coors Field',1265
+21,11,'OAC Coliseum','Comerica Park',2396
+21,12,'OAC Coliseum','Marlins Park',3124
+21,13,'OAC Coliseum','Minute Maid Park',1913
+21,14,'OAC Coliseum','Kauffman Stadium',1813
+21,15,'OAC Coliseum','Dodger Stadium',366
+21,16,'OAC Coliseum','Miller Park',2168
+21,17,'OAC Coliseum','Target Field',2041
+21,18,'OAC Coliseum','Nationals Park',2816
+21,19,'OAC Coliseum','Citi Field',2920
+21,20,'OAC Coliseum','Yankee Stadium',2912
+21,22,'OAC Coliseum','Citizens Bank Park',2883
+21,23,'OAC Coliseum','PNC Park',2581
+21,24,'OAC Coliseum','PETCO Park',487
+21,25,'OAC Coliseum','ATT Park',17
+21,26,'OAC Coliseum','Safeco Field',810
+21,27,'OAC Coliseum','Busch Stadium',2056
+21,28,'OAC Coliseum','Tropicana Field',2938
+21,29,'OAC Coliseum','Globe Life Park in Arlington',1722
+21,30,'OAC Coliseum','Rogers Centre',2631
+22,1,'Citizens Bank Park','Angels Stadium of Anaheim',2714
+22,2,'Citizens Bank Park','Chase Field',2399
+22,3,'Citizens Bank Park','SunTrust Park',772
+22,4,'Citizens Bank Park','Oriole Park at Camden Yards',100
+22,5,'Citizens Bank Park','Fenway Park',310
+22,6,'Citizens Bank Park','Wrigley Field',770
+22,7,'Citizens Bank Park','Guaranteed Rate Field',761
+22,8,'Citizens Bank Park','Great American Ball Park',577
+22,9,'Citizens Bank Park','Progressive Field',436
+22,10,'Citizens Bank Park','Coors Field',1732
+22,11,'Citizens Bank Park','Comerica Park',588
+22,12,'Citizens Bank Park','Marlins Park',1190
+22,13,'Citizens Bank Park','Minute Maid Park',1545
+22,14,'Citizens Bank Park','Kauffman Stadium',1124
+22,15,'Citizens Bank Park','Dodger Stadium',2721
+22,16,'Citizens Bank Park','Miller Park',854
+22,17,'Citizens Bank Park','Target Field',1173
+22,18,'Citizens Bank Park','Nationals Park',134
+22,19,'Citizens Bank Park','Citi Field',109
+22,20,'Citizens Bank Park','Yankee Stadium',108
+22,21,'Citizens Bank Park','OAC Coliseum',2883
+22,23,'Citizens Bank Park','PNC Park',310
+22,24,'Citizens Bank Park','PETCO Park',2742
+22,25,'Citizens Bank Park','ATT Park',2878
+22,26,'Citizens Bank Park','Safeco Field',2871
+22,27,'Citizens Bank Park','Busch Stadium',890
+22,28,'Citizens Bank Park','Tropicana Field',1064
+22,29,'Citizens Bank Park','Globe Life Park in Arlington',1478
+22,30,'Citizens Bank Park','Rogers Centre',484
+23,1,'PNC Park','Angels Stadium of Anaheim',2425
+23,2,'PNC Park','Chase Field',2110
+23,3,'PNC Park','SunTrust Park',685
+23,4,'PNC Park','Oriole Park at Camden Yards',247
+23,5,'PNC Park','Fenway Park',571
+23,6,'PNC Park','Wrigley Field',467
+23,7,'PNC Park','Guaranteed Rate Field',458
+23,8,'PNC Park','Great American Ball Park',289
+23,9,'PNC Park','Progressive Field',134
+23,10,'PNC Park','Coors Field',1444
+23,11,'PNC Park','Comerica Park',285
+23,12,'PNC Park','Marlins Park',1175
+23,13,'PNC Park','Minute Maid Park',1414
+23,14,'PNC Park','Kauffman Stadium',835
+23,15,'PNC Park','Dodger Stadium',2433
+23,16,'PNC Park','Miller Park',552
+23,17,'PNC Park','Target Field',870
+23,18,'PNC Park','Nationals Park',246
+23,19,'PNC Park','Citi Field',381
+23,20,'PNC Park','Yankee Stadium',376
+23,21,'PNC Park','OAC Coliseum',2581
+23,22,'PNC Park','Citizens Bank Park',310
+23,24,'PNC Park','PETCO Park',2454
+23,25,'PNC Park','ATT Park',2575
+23,26,'PNC Park','Safeco Field',2568
+23,27,'PNC Park','Busch Stadium',602
+23,28,'PNC Park','Tropicana Field',1049
+23,29,'PNC Park','Globe Life Park in Arlington',1237
+23,30,'PNC Park','Rogers Centre',312
+24,1,'PETCO Park','Angels Stadium of Anaheim',95
+24,2,'PETCO Park','Chase Field',356
+24,3,'PETCO Park','SunTrust Park',2145
+24,4,'PETCO Park','Oriole Park at Camden Yards',2679
+24,5,'PETCO Park','Fenway Park',3056
+24,6,'PETCO Park','Wrigley Field',2083
+24,7,'PETCO Park','Guaranteed Rate Field',2083
+24,8,'PETCO Park','Great American Ball Park',2210
+24,9,'PETCO Park','Progressive Field',2410
+24,10,'PETCO Park','Coors Field',1080
+24,11,'PETCO Park','Comerica Park',2345
+24,12,'PETCO Park','Marlins Park',2658
+24,13,'PETCO Park','Minute Maid Park',1472
+24,14,'PETCO Park','Kauffman Stadium',1690
+24,15,'PETCO Park','Dodger Stadium',124
+24,16,'PETCO Park','Miller Park',2117
+24,17,'PETCO Park','Target Field',1991
+24,18,'PETCO Park','Nationals Park',2694
+24,19,'PETCO Park','Citi Field',2869
+24,20,'PETCO Park','Yankee Stadium',2861
+24,21,'PETCO Park','OAC Coliseum',487
+24,22,'PETCO Park','Citizens Bank Park',2742
+24,23,'PETCO Park','PNC Park',2454
+24,25,'PETCO Park','ATT Park',501
+24,26,'PETCO Park','Safeco Field',1257
+24,27,'PETCO Park','Busch Stadium',1852
+24,28,'PETCO Park','Tropicana Field',2473
+24,29,'PETCO Park','Globe Life Park in Arlington',1343
+24,30,'PETCO Park','Rogers Centre',2575
+25,1,'ATT Park','Angels Stadium of Anaheim',409
+25,2,'ATT Park','Chase Field',751
+25,3,'ATT Park','SunTrust Park',2479
+25,4,'ATT Park','Oriole Park at Camden Yards',2815
+25,5,'ATT Park','Fenway Park',3105
+25,6,'ATT Park','Wrigley Field',2132
+25,7,'ATT Park','Guaranteed Rate Field',2131
+25,8,'ATT Park','Great American Ball Park',2382
+25,9,'ATT Park','Progressive Field',2458
+25,10,'ATT Park','Coors Field',1263
+25,11,'ATT Park','Comerica Park',2394
+25,12,'ATT Park','Marlins Park',3139
+25,13,'ATT Park','Minute Maid Park',1928
+25,14,'ATT Park','Kauffman Stadium',1811
+25,15,'ATT Park','Dodger Stadium',381
+25,16,'ATT Park','Miller Park',2166
+25,17,'ATT Park','Target Field',2039
+25,18,'ATT Park','Nationals Park',2814
+25,19,'ATT Park','Citi Field',2918
+25,20,'ATT Park','Yankee Stadium',2910
+25,21,'ATT Park','OAC Coliseum',17
+25,22,'ATT Park','Citizens Bank Park',2878
+25,23,'ATT Park','PNC Park',2575
+25,24,'ATT Park','PETCO Park',501
+25,26,'ATT Park','Safeco Field',807
+25,27,'ATT Park','Busch Stadium',2054
+25,28,'ATT Park','Tropicana Field',2954
+25,29,'ATT Park','Globe Life Park in Arlington',1737
+25,30,'ATT Park','Rogers Centre',2628
+26,1,'Safeco Field','Angels Stadium of Anaheim',1165
+26,2,'Safeco Field','Chase Field',1507
+26,3,'Safeco Field','SunTrust Park',2686
+26,4,'Safeco Field','Oriole Park at Camden Yards',2808
+26,5,'Safeco Field','Fenway Park',3097
+26,6,'Safeco Field','Wrigley Field',2097
+26,7,'Safeco Field','Guaranteed Rate Field',2104
+26,8,'Safeco Field','Great American Ball Park',2386
+26,9,'Safeco Field','Progressive Field',2451
+26,10,'Safeco Field','Coors Field',1331
+26,11,'Safeco Field','Comerica Park',2387
+26,12,'Safeco Field','Marlins Park',3360
+26,13,'Safeco Field','Minute Maid Park',2443
+26,14,'Safeco Field','Kauffman Stadium',1901
+26,15,'Safeco Field','Dodger Stadium',1136
+26,16,'Safeco Field','Miller Park',2025
+26,17,'Safeco Field','Target Field',1658
+26,18,'Safeco Field','Nationals Park',2806
+26,19,'Safeco Field','Citi Field',2911
+26,20,'Safeco Field','Yankee Stadium',2902
+26,21,'Safeco Field','OAC Coliseum',810
+26,22,'Safeco Field','Citizens Bank Park',2871
+26,23,'Safeco Field','PNC Park',2568
+26,24,'Safeco Field','PETCO Park',1257
+26,25,'Safeco Field','ATT Park',807
+26,27,'Safeco Field','Busch Stadium',2119
+26,28,'Safeco Field','Tropicana Field',3149
+26,29,'Safeco Field','Globe Life Park in Arlington',2205
+26,30,'Safeco Field','Rogers Centre',2616
+27,1,'Busch Stadium','Angels Stadium of Anaheim',1825
+27,2,'Busch Stadium','Chase Field',1510
+27,3,'Busch Stadium','SunTrust Park',543
+27,4,'Busch Stadium','Oriole Park at Camden Yards',828
+27,5,'Busch Stadium','Fenway Park',1177
+27,6,'Busch Stadium','Wrigley Field',302
+27,7,'Busch Stadium','Guaranteed Rate Field',296
+27,8,'Busch Stadium','Great American Ball Park',358
+27,9,'Busch Stadium','Progressive Field',558
+27,10,'Busch Stadium','Coors Field',850
+27,11,'Busch Stadium','Comerica Park',524
+27,12,'Busch Stadium','Marlins Park',1217
+27,13,'Busch Stadium','Minute Maid Park',851
+27,14,'Busch Stadium','Kauffman Stadium',242
+27,15,'Busch Stadium','Dodger Stadium',1832
+27,16,'Busch Stadium','Miller Park',377
+27,17,'Busch Stadium','Target Field',562
+27,18,'Busch Stadium','Nationals Park',826
+27,19,'Busch Stadium','Citi Field',962
+27,20,'Busch Stadium','Yankee Stadium',963
+27,21,'Busch Stadium','OAC Coliseum',2056
+27,22,'Busch Stadium','Citizens Bank Park',890
+27,23,'Busch Stadium','PNC Park',602
+27,24,'Busch Stadium','PETCO Park',1852
+27,25,'Busch Stadium','ATT Park',2054
+27,26,'Busch Stadium','Safeco Field',2119
+27,28,'Busch Stadium','Tropicana Field',1032
+27,29,'Busch Stadium','Globe Life Park in Arlington',668
+27,30,'Busch Stadium','Rogers Centre',754
+28,1,'Tropicana Field','Angels Stadium of Anaheim',2535
+28,2,'Tropicana Field','Chase Field',2179
+28,3,'Tropicana Field','SunTrust Park',491
+28,4,'Tropicana Field','Oriole Park at Camden Yards',967
+28,5,'Tropicana Field','Fenway Park',1368
+28,6,'Tropicana Field','Wrigley Field',1194
+28,7,'Tropicana Field','Guaranteed Rate Field',1185
+28,8,'Tropicana Field','Great American Ball Park',939
+28,9,'Tropicana Field','Progressive Field',1115
+28,10,'Tropicana Field','Coors Field',1880
+28,11,'Tropicana Field','Comerica Park',1198
+28,12,'Tropicana Field','Marlins Park',266
+28,13,'Tropicana Field','Minute Maid Park',1003
+28,14,'Tropicana Field','Kauffman Stadium',1272
+28,15,'Tropicana Field','Dodger Stadium',2553
+28,16,'Tropicana Field','Miller Park',1288
+28,17,'Tropicana Field','Target Field',1593
+28,18,'Tropicana Field','Nationals Park',930
+28,19,'Tropicana Field','Citi Field',1167
+28,20,'Tropicana Field','Yankee Stadium',1166
+28,21,'Tropicana Field','OAC Coliseum',2938
+28,22,'Tropicana Field','Citizens Bank Park',1064
+28,23,'Tropicana Field','PNC Park',1049
+28,24,'Tropicana Field','PETCO Park',2473
+28,25,'Tropicana Field','ATT Park',2954
+28,26,'Tropicana Field','Safeco Field',3149
+28,27,'Tropicana Field','Busch Stadium',1032
+28,29,'Tropicana Field','Globe Life Park in Arlington',1180
+28,30,'Tropicana Field','Rogers Centre',1355
+29,1,'Globe Life Park in Arlington','Angels Stadium of Anaheim',1405
+29,2,'Globe Life Park in Arlington','Chase Field',1048
+29,3,'Globe Life Park in Arlington','SunTrust Park',802
+29,4,'Globe Life Park in Arlington','Oriole Park at Camden Yards',1379
+29,5,'Globe Life Park in Arlington','Fenway Park',1777
+29,6,'Globe Life Park in Arlington','Wrigley Field',970
+29,7,'Globe Life Park in Arlington','Guaranteed Rate Field',982
+29,8,'Globe Life Park in Arlington','Great American Ball Park',948
+29,9,'Globe Life Park in Arlington','Progressive Field',1197
+29,10,'Globe Life Park in Arlington','Coors Field',881
+29,11,'Globe Life Park in Arlington','Comerica Park',1199
+29,12,'Globe Life Park in Arlington','Marlins Park',1362
+29,13,'Globe Life Park in Arlington','Minute Maid Park',257
+29,14,'Globe Life Park in Arlington','Kauffman Stadium',559
+29,15,'Globe Life Park in Arlington','Dodger Stadium',1423
+29,16,'Globe Life Park in Arlington','Miller Park',1045
+29,17,'Globe Life Park in Arlington','Target Field',993
+29,18,'Globe Life Park in Arlington','Nationals Park',1347
+29,19,'Globe Life Park in Arlington','Citi Field',1574
+29,20,'Globe Life Park in Arlington','Yankee Stadium',1575
+29,21,'Globe Life Park in Arlington','OAC Coliseum',1722
+29,22,'Globe Life Park in Arlington','Citizens Bank Park',1478
+29,23,'Globe Life Park in Arlington','PNC Park',1237
+29,24,'Globe Life Park in Arlington','PETCO Park',1343
+29,25,'Globe Life Park in Arlington','ATT Park',1737
+29,26,'Globe Life Park in Arlington','Safeco Field',2205
+29,27,'Globe Life Park in Arlington','Busch Stadium',668
+29,28,'Globe Life Park in Arlington','Tropicana Field',1180
+29,30,'Globe Life Park in Arlington','Rogers Centre',1428
+30,1,'Rogers Centre','Angels Stadium of Anaheim',2507
+30,2,'Rogers Centre','Chase Field',2262
+30,3,'Rogers Centre','SunTrust Park',940
+30,4,'Rogers Centre','Oriole Park at Camden Yards',466
+30,5,'Rogers Centre','Fenway Park',547
+30,6,'Rogers Centre','Wrigley Field',519
+30,7,'Rogers Centre','Guaranteed Rate Field',509
+30,8,'Rogers Centre','Great American Ball Park',492
+30,9,'Rogers Centre','Progressive Field',287
+30,10,'Rogers Centre','Coors Field',1498
+30,11,'Rogers Centre','Comerica Park',230
+30,12,'Rogers Centre','Marlins Park',1481
+30,13,'Rogers Centre','Minute Maid Park',1543
+30,14,'Rogers Centre','Kauffman Stadium',987
+30,15,'Rogers Centre','Dodger Stadium',2514
+30,16,'Rogers Centre','Miller Park',603
+30,17,'Rogers Centre','Target Field',925
+30,18,'Rogers Centre','Nationals Park',492
+30,19,'Rogers Centre','Citi Field',492
+30,20,'Rogers Centre','Yankee Stadium',483
+30,21,'Rogers Centre','OAC Coliseum',2631
+30,22,'Rogers Centre','Citizens Bank Park',484
+30,23,'Rogers Centre','PNC Park',312
+30,24,'Rogers Centre','PETCO Park',2575
+30,25,'Rogers Centre','ATT Park',2628
+30,26,'Rogers Centre','Safeco Field',2616
+30,27,'Rogers Centre','Busch Stadium',754
+30,28,'Rogers Centre','Tropicana Field',1355
+30,29,'Rogers Centre','Globe Life Park in Arlington',1428
