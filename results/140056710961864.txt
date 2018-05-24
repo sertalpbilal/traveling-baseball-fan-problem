@@ -5,12 +5,12 @@ mont: 2.0
 time: 26.248 days
 dist: 15480.000 miles
 cost: 4960.229 USD
-gams: 791
-vars: 22831
-cons: 823
-data: 49.676 secs
-prep: 490.287 secs
-solv: 476.705 secs
+gams: 786
+vars: 22676
+cons: 818
+data: 52.986 secs
+prep: 8.807 secs
+solv: 601.254 secs
 sdis: 17 2-3
 ldis: 1472 5-6
 stim: 150.0 2-3
