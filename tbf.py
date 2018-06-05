@@ -22,6 +22,7 @@ from swat import CAS
 import datetime
 from dateutil import relativedelta
 import time
+from osm import get_driving_times
 
 
 def parse_data():
@@ -35,6 +36,7 @@ def parse_data():
     distance_data = distance_data.replace('Angels Stadium of Anaheim', 'Angel Stadium of Anaheim')
     distance_data = distance_data.replace('ATT Park', 'AT&T Park')
     distance_data = distance_data.set_index(['name', 'name.1'])
+    driving_data = get_driving_times()
     game_data = pd.DataFrame()
     venue_data = pd.read_csv('data/geocode.csv').set_index('venue')
 
@@ -58,7 +60,7 @@ def parse_data():
     game_data = game_data[game_data['START'] >= pd.Timestamp('20180329')]
 
     print('Parsed all data...')
-    return(distance_data, game_data, venue_data)
+    return(distance_data, driving_data, game_data, venue_data)
 
 
 '''
@@ -67,7 +69,9 @@ Defines the optimization problem and solves it.
 Parameters
 ----------
 distance_data : pandas.DataFrame
-    The driving distances between stadiums.
+    Distances between stadiums in miles.
+driving_data : pandas.DataFrame
+    The driving times between stadiums in minutes.
 game_data : pandas.DataFrame
     The game schedule information for the current season.
 venue_data : pandas.DataFrame
@@ -80,13 +84,13 @@ obj_type : integer, optional
     Objective type for the optimization problem,
     0: Minimize total tour time, 1: Minimize total cost
 '''
-def tbfp(distance_data, game_data, venue_data,
+def tbfp(distance_data, driving_data, game_data, venue_data,
          start_date=datetime.date(2018, 3, 29),
          end_date=datetime.date(2018, 10, 31),
          obj_type=0):
 
     # Define a CAS session
-    cas_session = CAS(your_cas_address, port=your_cas_port, authinfo=your_auth_info)
+    cas_session = CAS(your_cas_server, port=your_cas_port)
     m = so.Model(name='tbfp', session=cas_session)
 
     t0 = time.time()
@@ -95,7 +99,7 @@ def tbfp(distance_data, game_data, venue_data,
     game_data = game_data[game_data['END'] <= end_date]
 
     # Define sets
-    STADIUMS = sorted(distance_data.index.get_level_values('name').unique().tolist())
+    STADIUMS = sorted(venue_data.index.tolist())
     game_data = game_data[game_data['VENUE'].isin(STADIUMS)]
     GAMES = game_data.index.tolist()
     NODES = GAMES + ['source', 'sink']
@@ -107,6 +111,7 @@ def tbfp(distance_data, game_data, venue_data,
     end = game_data['END']
     location = game_data['VENUE']
     city = game_data['CITY']
+    driving = driving_data['duration']
     distance = distance_data['dist1']
     lat = venue_data['lat']
     lon = venue_data['lon']
@@ -124,8 +129,8 @@ def tbfp(distance_data, game_data, venue_data,
             arg_min[s] = -1
         for g2 in GAMES:
             if location[g1] != location[g2]:
-                total_dist = distance[location[g1], location[g2]]
-                driving_time = datetime.timedelta(minutes = float(total_dist))  # Assuming 60 mph speed
+                time_between = driving[location[g1], location[g2]]
+                driving_time = datetime.timedelta(minutes = float(time_between))
                 if end[g1] + driving_time <= start[g2] and min_dist[location[g2]] > start[g2]:
                     min_dist[location[g2]] = start[g2]
                     arg_min[location[g2]] = g2
@@ -157,7 +162,7 @@ def tbfp(distance_data, game_data, venue_data,
     total_distance = so.quick_sum(
         distance[location[g1], location[g2]] * use_arc[g1, g2]
         for (g1, g2) in ARCS if g1 != 'source' and g2 != 'sink')
-    total_cost = total_time * 130 + total_distance * 0.10
+    total_cost = total_time * 130 + total_distance * 0.25
 
     # Set objectives
     if obj_type == 0:
@@ -184,7 +189,7 @@ def tbfp(distance_data, game_data, venue_data,
     prep_mark = time.time()
     prep_time = prep_mark - t1
     # Send the problem to SAS Viya solvers and solve the problem
-    m.solve()
+    m.solve(milp={'concurrent': True})
 
     solve_time = time.time() - prep_mark
     
@@ -219,6 +224,7 @@ def tbfp(distance_data, game_data, venue_data,
             *route[-1]))
         if c_game != -1:
             c_dis = distance[location[c_game], location[g]]
+            c_driv = driving[location[c_game], location[g]]
             c_tim = (start[g] - end[c_game]).total_seconds() / 60.0
             if c_dis > longest_dist[0]:
                 longest_dist = [c_dis, i, i+1]
@@ -228,8 +234,8 @@ def tbfp(distance_data, game_data, venue_data,
                 longest_time = [c_tim, i, i+1]
             if c_tim < shortest_time[0]:
                 shortest_time = [c_tim, i, i+1]
-            if c_tim - c_dis < most_critical[0]:
-                most_critical = [c_tim - c_dis, i, i+1]
+            if c_tim - c_driv < most_critical[0]:
+                most_critical = [c_tim - c_driv, i, i+1]
         c_game = g
 
     print('Total time: {}'.format(end[schedule[-1]] - start[schedule[0]]))
@@ -273,25 +279,26 @@ schd: [
     file = open('results/{}.txt'.format(id(m)), 'w')
     file.write(out)
     file.close()
+    print(out)
 
 
 '''
 Run all the experiments for the blog post
 '''
 def experiments():
-    distance_data, game_data, venue_data = parse_data()
+    distance_data, driving_data, game_data, venue_data = parse_data()
     date_range = [
-        [datetime.date(2018,4,1), datetime.date(2018,6,1)],
+        [datetime.date(2018,3,29), datetime.date(2018,6,1)],
         [datetime.date(2018,6,1), datetime.date(2018,8,1)],
         [datetime.date(2018,8,1), datetime.date(2018,10,1)],
-        [datetime.date(2018,4,1), datetime.date(2018,7,1)],
+        [datetime.date(2018,3,29), datetime.date(2018,7,1)],
         [datetime.date(2018,7,1), datetime.date(2018,10,1)],
-        [datetime.date(2018,4,1), datetime.date(2018,10,1)]
+        [datetime.date(2018,3,29), datetime.date(2018,10,1)]
         ]
     obj_type = [0, 1]
     for d in date_range:
         for o in obj_type:
-            tbfp(distance_data, game_data, venue_data,
+            tbfp(distance_data, driving_data, game_data, venue_data,
                  start_date=d[0], end_date=d[1], obj_type=o)
             so.reset_globals()
 
