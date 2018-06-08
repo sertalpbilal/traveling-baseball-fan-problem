@@ -77,12 +77,12 @@ game_data : pandas.DataFrame
 venue_data : pandas.DataFrame
     The information regarding each 30 MLB venues.
 start_date : datetime.date, optional
-    The earliest start date for the tour.
+    The earliest start date for the schedule.
 end_date : datetime.date, optional
-    The latest end date for the tour.
+    The latest end date for the schedule.
 obj_type : integer, optional
     Objective type for the optimization problem,
-    0: Minimize total tour time, 1: Minimize total cost
+    0: Minimize total schedule time, 1: Minimize total cost
 '''
 def tbfp(distance_data, driving_data, game_data, venue_data,
          start_date=datetime.date(2018, 3, 29),
