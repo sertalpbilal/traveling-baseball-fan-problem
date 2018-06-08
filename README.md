@@ -23,7 +23,7 @@ See the [SAS/OR blog](https://blogs.sas.com/content/operations/) post for detail
 
 ### All results
 
-![https://blogs.sas.com/content/operations/files/2018/06/all_results.png](https://blogs.sas.com/content/operations/files/2018/06/all_results.png)
+![https://blogs.sas.com/content/operations/files/2018/06/all_results.png](https://blogs.sas.com/content/operations/files/2018/06/all_solutions.png)
 
 ### 2018 season
 
