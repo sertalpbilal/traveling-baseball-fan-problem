@@ -158,7 +158,7 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
 
     # Define expressions for the objectives
     total_time = so.quick_sum(
-        cost[g1,g2] * use_arc[g1,g2] for (g1, g2) in ARCS)
+        cost[g1,g2] * use_arc[g1,g2] for (g1, g2) in ARCS) + 30*3.0/24
     total_distance = so.quick_sum(
         distance[location[g1], location[g2]] * use_arc[g1, g2]
         for (g1, g2) in ARCS if g1 != 'source' and g2 != 'sink')
