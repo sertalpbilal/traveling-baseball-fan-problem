@@ -1,21 +1,21 @@
 objt: 1
-sdat: 2018-08-01
+sdat: 2018-07-01
 edat: 2018-10-01
-mont: 2.0
+mont: 3.1
 time: 29.127 days
 dist: 12450.000 miles
 cost: 6899.021 USD
-gams: 808
-vars: 23174
-cons: 840
-data: 53.429 secs
-prep: 10.042 secs
-solv: 1696.167 secs
+gams: 1210
+vars: 35636
+cons: 1242
+data: 124.602 secs
+prep: 14.716 secs
+solv: 3992.798 secs
 sdis: 9 15-16
 ldis: 1472 25-26
 stim: 170.0 5-6
 ltim: 3085.0 22-23
-mcri: 106.11333333333334 2-3
+mcri: 105.67499999999995 2-3
 schd: [
 1,Angel Stadium of Anaheim,Tigers,Angels,Anaheim,2018-08-06 22:07:00,33.800308,-117.8827321
 2,Chase Field,Phillies,Diamondbacks,Phoenix,2018-08-07 21:40:00,33.4455264,-112.06666409999998

@@ -1,21 +1,21 @@
 objt: 0
-sdat: 2018-07-01
+sdat: 2018-08-01
 edat: 2018-10-01
-mont: 3.1
+mont: 2.0
 time: 24.123 days
-dist: 21237.000 miles
-cost: 8445.229 USD
-gams: 1210
-vars: 35636
-cons: 1242
-data: 121.322 secs
-prep: 14.725 secs
-solv: 83.139 secs
+dist: 19213.000 miles
+cost: 7939.229 USD
+gams: 808
+vars: 23174
+cons: 840
+data: 57.085 secs
+prep: 8.908 secs
+solv: 42.681 secs
 sdis: 17 2-3
-ldis: 1405 29-30
+ldis: 1414 20-21
 stim: 120.0 2-3
-ltim: 1682.0 29-30
-mcri: 11.77000000000001 24-25
+ltim: 1655.0 11-12
+mcri: 11.769999999999982 18-19
 schd: [
 1,Petco Park,Rockies,Padres,San Diego,2018-08-31 22:10:00,32.707656300000004,-117.15690430000001
 2,AT&T Park,Mets,Giants,San Francisco,2018-09-01 16:05:00,37.7785951,-122.38926979999998
@@ -25,26 +25,26 @@ schd: [
 6,Coors Field,Giants,Rockies,Denver,2018-09-04 20:40:00,39.755882299999996,-104.9941781
 7,Guaranteed Rate Field,Tigers,White Sox,Chicago,2018-09-05 20:10:00,41.8299021,-87.6337522
 8,Rogers Centre,Indians,Blue Jays,Toronto,2018-09-06 19:07:00,43.6414378,-79.3893532
-9,PNC Park,Marlins,Pirates,Pittsburgh,2018-09-07 19:05:00,40.4468548,-80.0056657
-10,Tropicana Field,Orioles,Rays,St. Petersburg,2018-09-08 18:10:00,27.768224600000003,-82.65339209999999
+9,Fenway Park,Astros,Red Sox,Boston,2018-09-07 19:10:00,42.3466764,-71.0972178
+10,Citi Field,Phillies,Mets,Flushing,2018-09-08 19:10:00,40.75708770000001,-73.8458213
 11,Nationals Park,Cubs,Nationals,Washington,2018-09-09 13:35:00,38.8730102,-77.0074329
-12,Great American Ball Park,Dodgers,Reds,Cincinnati,2018-09-10 18:40:00,39.0979313,-84.508151
-13,Target Field,Yankees,Twins,Minneapolis,2018-09-11 20:10:00,44.9817656,-93.277514
+12,Target Field,Yankees,Twins,Minneapolis,2018-09-10 20:10:00,44.9817656,-93.277514
+13,Great American Ball Park,Dodgers,Reds,Cincinnati,2018-09-11 18:40:00,39.0979313,-84.508151
 14,Busch Stadium,Pirates,Cardinals,St. Louis,2018-09-12 13:15:00,38.6226188,-90.1928209
 15,Kauffman Stadium,White Sox,Royals,Kansas City,2018-09-12 20:15:00,39.051671899999995,-94.4803142
-16,Citi Field,Marlins,Mets,Flushing,2018-09-13 19:10:00,40.75708770000001,-73.8458213
+16,Oriole Park at Camden Yards,Athletics,Orioles,Baltimore,2018-09-13 19:05:00,39.2834958,-76.62191640000002
 17,Wrigley Field,Reds,Cubs,Chicago,2018-09-14 14:20:00,41.94843839999999,-87.6553327
 18,Miller Park,Pirates,Brewers,Milwaukee,2018-09-14 20:10:00,43.0279776,-87.97115040000001
-19,Fenway Park,Mets,Red Sox,Boston,2018-09-15 16:05:00,42.3466764,-71.0972178
-20,SunTrust Park,Nationals,Braves,Atlanta,2018-09-16 13:35:00,33.8907854,-84.4677714
-21,Oriole Park at Camden Yards,Blue Jays,Orioles,Baltimore,2018-09-17 19:05:00,39.2834958,-76.62191640000002
+19,Tropicana Field,Athletics,Rays,St. Petersburg,2018-09-15 18:10:00,27.768224600000003,-82.65339209999999
+20,Minute Maid Park,Diamondbacks,Astros,Houston,2018-09-16 14:10:00,29.757269399999995,-95.3555143
+21,PNC Park,Royals,Pirates,Pittsburgh,2018-09-17 19:05:00,40.4468548,-80.0056657
 22,Yankee Stadium,Red Sox,Yankees,Bronx,2018-09-18 13:05:00,40.82964260000001,-73.9261745
 23,Citizens Bank Park,Mets,Phillies,Philadelphia,2018-09-18 19:05:00,39.906057200000006,-75.1664952
 24,Comerica Park,Twins,Tigers,Detroit,2018-09-19 13:10:00,42.3389984,-83.0485197
 25,Progressive Field,White Sox,Indians,Cleveland,2018-09-19 19:10:00,41.496210999999995,-81.68522890000001
-26,Marlins Park,Reds,Marlins,Miami,2018-09-20 19:10:00,25.7783176,-80.219597
-27,Minute Maid Park,Angels,Astros,Houston,2018-09-21 20:10:00,29.757269399999995,-95.3555143
-28,Chase Field,Rockies,Diamondbacks,Phoenix,2018-09-22 20:10:00,33.4455264,-112.06666409999998
-29,Globe Life Park in Arlington,Mariners,Rangers,Arlington,2018-09-23 15:05:00,32.7512152,-97.083209
+26,SunTrust Park,Phillies,Braves,Atlanta,2018-09-20 19:35:00,33.8907854,-84.4677714
+27,Marlins Park,Reds,Marlins,Miami,2018-09-21 19:10:00,25.7783176,-80.219597
+28,Globe Life Park in Arlington,Mariners,Rangers,Arlington,2018-09-22 20:05:00,32.7512152,-97.083209
+29,Chase Field,Rockies,Diamondbacks,Phoenix,2018-09-23 16:10:00,33.4455264,-112.06666409999998
 30,Angel Stadium of Anaheim,Rangers,Angels,Anaheim,2018-09-24 22:07:00,33.800308,-117.8827321
 ]

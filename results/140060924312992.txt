@@ -1,21 +1,21 @@
 objt: 1
 sdat: 2018-03-29
-edat: 2018-10-01
-mont: 6.2
+edat: 2018-07-01
+mont: 3.1
 time: 28.000 days
 dist: 11914.000 miles
 cost: 6618.500 USD
-gams: 2438
-vars: 73704
-cons: 2470
-data: 471.541 secs
-prep: 36.543 secs
-solv: 34610.136 secs
+gams: 1224
+vars: 36578
+cons: 1256
+data: 131.806 secs
+prep: 14.923 secs
+solv: 817.133 secs
 sdis: 17 3-4
 ldis: 1472 7-8
 stim: 180.0 15-16
 ltim: 2705.0 24-25
-mcri: 8.35833333333332 29-30
+mcri: 7.939999999999998 29-30
 schd: [
 1,Safeco Field,Rangers,Mariners,Seattle,2018-05-29 22:10:00,47.5914026,-122.3325085
 2,Dodger Stadium,Phillies,Dodgers,Los Angeles,2018-05-30 22:10:00,34.073851,-118.23995829999998

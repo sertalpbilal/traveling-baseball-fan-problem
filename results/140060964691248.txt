@@ -8,14 +8,14 @@ cost: 6752.250 USD
 gams: 800
 vars: 23485
 cons: 832
-data: 51.911 secs
-prep: 8.847 secs
-solv: 251.542 secs
+data: 53.216 secs
+prep: 8.595 secs
+solv: 267.695 secs
 sdis: 95 5-6
 ldis: 1263 7-8
 stim: 240.0 18-19
 ltim: 1620.0 26-27
-mcri: 8.35833333333332 29-30
+mcri: 7.939999999999998 29-30
 schd: [
 1,Safeco Field,Red Sox,Mariners,Seattle,2018-06-14 22:10:00,47.5914026,-122.3325085
 2,Oakland Coliseum,Angels,Athletics,Oakland,2018-06-15 21:35:00,37.7515946,-122.20054579999999
@@ -25,9 +25,9 @@ schd: [
 6,Petco Park,Athletics,Padres,San Diego,2018-06-19 22:10:00,32.707656300000004,-117.15690430000001
 7,AT&T Park,Marlins,Giants,San Francisco,2018-06-20 15:45:00,37.7785951,-122.38926979999998
 8,Coors Field,Mets,Rockies,Denver,2018-06-21 15:10:00,39.755882299999996,-104.9941781
-9,Target Field,Rangers,Twins,Minneapolis,2018-06-22 20:10:00,44.9817656,-93.277514
+9,Guaranteed Rate Field,Athletics,White Sox,Chicago,2018-06-22 20:10:00,41.8299021,-87.6337522
 10,Miller Park,Cardinals,Brewers,Milwaukee,2018-06-23 16:10:00,43.0279776,-87.97115040000001
-11,Guaranteed Rate Field,Athletics,White Sox,Chicago,2018-06-24 14:10:00,41.8299021,-87.6337522
+11,Target Field,Rangers,Twins,Minneapolis,2018-06-24 14:10:00,44.9817656,-93.277514
 12,Kauffman Stadium,Angels,Royals,Kansas City,2018-06-25 16:15:00,39.051671899999995,-94.4803142
 13,Globe Life Park in Arlington,Padres,Rangers,Arlington,2018-06-26 20:05:00,32.7512152,-97.083209
 14,Minute Maid Park,Blue Jays,Astros,Houston,2018-06-27 14:10:00,29.757269399999995,-95.3555143

@@ -6,16 +6,16 @@ time: 26.247 days
 dist: 13402.000 miles
 cost: 6762.549 USD
 gams: 824
-vars: 23909
+vars: 23910
 cons: 856
-data: 57.047 secs
-prep: 9.425 secs
-solv: 291.535 secs
+data: 59.584 secs
+prep: 9.987 secs
+solv: 415.189 secs
 sdis: 17 4-5
 ldis: 1136 1-2
 stim: 150.0 4-5
 ltim: 1625.0 10-11
-mcri: 69.81 21-22
+mcri: 69.65333333333334 21-22
 schd: [
 1,Safeco Field,Indians,Mariners,Seattle,2018-03-31 16:10:00,47.5914026,-122.3325085
 2,Dodger Stadium,Giants,Dodgers,Los Angeles,2018-04-01 20:37:00,34.073851,-118.23995829999998
