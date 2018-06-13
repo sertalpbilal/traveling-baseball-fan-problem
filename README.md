@@ -1,7 +1,7 @@
 # Traveling Baseball Fan Problem
 
 Repository for the Traveling Baseball Fan Problem (TBFP).
-See the [SAS/OR blog](https://blogs.sas.com/content/operations/) post for details.
+See the [SAS/OR blog post](https://blogs.sas.com/content/operations/2018/06/13/visiting-all-30-major-league-baseball-stadiums-with-python-and-sas-viya/) for details.
 
 ## Repository structure
 
@@ -23,18 +23,18 @@ See the [SAS/OR blog](https://blogs.sas.com/content/operations/) post for detail
 
 ### All results
 
-![https://blogs.sas.com/content/operations/files/2018/06/all_results.png](https://blogs.sas.com/content/operations/files/2018/06/all_solutions.png)
+![https://blogs.sas.com/content/operations/files/2018/06/all_solutions.png](https://blogs.sas.com/content/operations/files/2018/06/all_solutions.png)
 
 ### 2018 season
 
 #### Shortest tour possible
 
-![https://blogs.sas.com/content/operations/files/2018/06/solution11.png](https://blogs.sas.com/content/operations/files/2018/06/solution11.png)
+![https://blogs.sas.com/content/operations/files/2018/06/map11.png](https://blogs.sas.com/content/operations/files/2018/06/map11.png)
 
-![https://blogs.sas.com/content/operations/files/2018/06/table11.png](https://blogs.sas.com/content/operations/files/2018/06/table11.png)
+![https://blogs.sas.com/content/operations/files/2018/06/sched11.png](https://blogs.sas.com/content/operations/files/2018/06/sched11.png)
 
-#### Cheapest tour possible
+#### Cheapest tour after the midseason classic
 
-![https://blogs.sas.com/content/operations/files/2018/06/solution12.png](https://blogs.sas.com/content/operations/files/2018/06/solution12.png)
+![https://blogs.sas.com/content/operations/files/2018/06/map10.png](https://blogs.sas.com/content/operations/files/2018/06/map10.png)
 
-![https://blogs.sas.com/content/operations/files/2018/06/table12.png](https://blogs.sas.com/content/operations/files/2018/06/table12.png)
+![https://blogs.sas.com/content/operations/files/2018/06/sched10.png](https://blogs.sas.com/content/operations/files/2018/06/sched10.png)
