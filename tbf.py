@@ -29,16 +29,11 @@ def parse_data():
 
     # Read the distance data and fix name differences
     distance_data = pd.read_csv('data/distance.csv', quoting=1)
-    distance_data.columns = [i.replace('\'','') for i in distance_data.columns.tolist()]
+    distance_data.columns = [i.replace('\'', '') for i in distance_data.columns.tolist()]
     distance_data = distance_data.replace('\'', '', regex=True)
-    distance_data = distance_data.replace('OAC Coliseum', 'Oakland Coliseum')
-    distance_data = distance_data.replace('PETCO Park', 'Petco Park')
-    distance_data = distance_data.replace('Angels Stadium of Anaheim', 'Angel Stadium of Anaheim')
-    distance_data = distance_data.replace('ATT Park', 'AT&T Park')
-    distance_data = distance_data.set_index(['name', 'name.1'])
-    driving_data = get_driving_times()
+    distance_data = distance_data.set_index(['name', 'name2'])
     game_data = pd.DataFrame()
-    venue_data = pd.read_csv('data/geocode.csv').set_index('venue')
+    venue_data = pd.read_csv('data/coords.csv').set_index('Venue')
 
     # Read schedules of all MLB teams
     for tfile in glob.glob('data/t*.csv'):
@@ -59,11 +54,14 @@ def parse_data():
     game_data['END'] = pd.to_datetime(game_data.pop('END DATE ET') + ' ' + game_data.pop('END TIME ET'), format='%m/%d/%y %I:%M %p')
     game_data = game_data[game_data['START'] >= pd.Timestamp('20180329')]
 
+    #with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+    #    print(game_data)
+
     print('Parsed all data...')
-    return(distance_data, driving_data, game_data, venue_data)
+    return(distance_data, game_data, venue_data)
 
 
-'''
+"""
 Defines the optimization problem and solves it.
 
 Parameters
@@ -83,10 +81,10 @@ end_date : datetime.date, optional
 obj_type : integer, optional
     Objective type for the optimization problem,
     0: Minimize total schedule time, 1: Minimize total cost
-'''
-def tbfp(distance_data, driving_data, game_data, venue_data,
-         start_date=datetime.date(2018, 3, 29),
-         end_date=datetime.date(2018, 10, 31),
+"""
+def tbfp(distance_data, game_data, venue_data,
+         start_date=datetime.date(2019, 3, 28),
+         end_date=datetime.date(2019, 10, 1),
          obj_type=0):
 
     # Define a CAS session
@@ -98,11 +96,15 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
     game_data = game_data[game_data['START'] >= start_date]
     game_data = game_data[game_data['END'] <= end_date]
 
+    # Numerical assignment for source and sink
+    source = 0
+    sink = 9999
+
     # Define sets
     STADIUMS = sorted(venue_data.index.tolist())
     game_data = game_data[game_data['VENUE'].isin(STADIUMS)]
     GAMES = game_data.index.tolist()
-    NODES = GAMES + ['source', 'sink']
+    NODES = GAMES + [source, sink]
 
     # Define parameters
     away = game_data['AWAY']
@@ -111,8 +113,8 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
     end = game_data['END']
     location = game_data['VENUE']
     city = game_data['CITY']
-    driving = driving_data['duration']
-    distance = distance_data['dist1']
+    driving = distance_data['minutes']
+    distance = distance_data['miles']
     lat = venue_data['lat']
     lon = venue_data['lon']
 
@@ -125,12 +127,12 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
     ARCS = []
     for g1 in GAMES:
         for s in STADIUMS:
-            min_dist[s] = datetime.datetime(2019,1,1)
+            min_dist[s] = datetime.datetime(2020, 1, 1)
             arg_min[s] = -1
         for g2 in GAMES:
             if location[g1] != location[g2]:
                 time_between = driving[location[g1], location[g2]]
-                driving_time = datetime.timedelta(minutes = float(time_between))
+                driving_time = datetime.timedelta(minutes=float(time_between))
                 if end[g1] + driving_time <= start[g2] and min_dist[location[g2]] > start[g2]:
                     min_dist[location[g2]] = start[g2]
                     arg_min[location[g2]] = g2
@@ -138,17 +140,17 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
             if arg_min[s] != -1:
                 ARCS.append((g1, arg_min[s]))
 
-    ARCS = ARCS + [('source',g) for g in GAMES] + [(g,'sink') for g in GAMES]
+    ARCS = ARCS + [(source, g) for g in GAMES] + [(g, sink) for g in GAMES]
     print('Number of ARCS: {}'.format(len(ARCS)))
 
     cost = {}
-    for (g1,g2) in ARCS:
-        if g1 != 'source' and g2 != 'sink':
-            cost[g1,g2] = (end[g2] - end[g1]).total_seconds()/86400.0
-        elif g2 != 'sink' and g1 == 'source':
-            cost[g1,g2] = (end[g2]-start[g2]).total_seconds()/86400.0
+    for (g1, g2) in ARCS:
+        if g1 != source and g2 != sink:
+            cost[g1, g2] = (end[g2] - end[g1]).total_seconds()/86400.0
+        elif g2 != sink and g1 == source:
+            cost[g1, g2] = (end[g2]-start[g2]).total_seconds()/86400.0
         else:
-            cost[g1,g2] = 0
+            cost[g1, g2] = 0
 
     t1 = time.time()
     data_time = t1-t0
@@ -158,10 +160,10 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
 
     # Define expressions for the objectives
     total_time = so.quick_sum(
-        cost[g1,g2] * use_arc[g1,g2] for (g1, g2) in ARCS)
+        cost[g1, g2] * use_arc[g1, g2] for (g1, g2) in ARCS)
     total_distance = so.quick_sum(
         distance[location[g1], location[g2]] * use_arc[g1, g2]
-        for (g1, g2) in ARCS if g1 != 'source' and g2 != 'sink')
+        for (g1, g2) in ARCS if g1 != source and g2 != sink)
     total_cost = total_time * 130 + total_distance * 0.25
 
     # Set objectives
@@ -172,33 +174,31 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
 
     # Balance constraint
     m.add_constraints((
-        so.quick_sum(use_arc[g, g2] for (gx,g2) in ARCS if gx==g) -\
-        so.quick_sum(use_arc[g1, g] for (g1,gx) in ARCS if gx==g)\
-        == (1 if g == 'source' else (-1 if g == 'sink' else 0) )
+        so.quick_sum(use_arc[g, g2] for (gx, g2) in ARCS if gx == g) -
+        so.quick_sum(use_arc[g1, g] for (g1, gx) in ARCS if gx == g)
+        == (1 if g == source else (-1 if g == sink else 0))
         for g in NODES),
         name='balance')
 
     # Visit once constraint
     visit_once = so.ConstraintGroup((
         so.quick_sum(
-            use_arc[g1,g2]
-            for (g1,g2) in ARCS if g2 != 'sink' and location[g2] == s) == 1
+            use_arc[g1, g2]
+            for (g1, g2) in ARCS if g2 != sink and location[g2] == s) == 1
         for s in STADIUMS), name='visit_once')
     m.include(visit_once)
 
     prep_mark = time.time()
     prep_time = prep_mark - t1
     # Send the problem to SAS Viya solvers and solve the problem
-    m.solve(milp={'concurrent': True})
+    m.solve(milp={'concurrent': True}, frame=True)
 
     solve_time = time.time() - prep_mark
-    
 
     # Parse the results
     schedule = []
-    for (g1,g2) in ARCS:
-        if (use_arc[g1,g2].get_value() > 0.5 and 
-            g1 != 'source' and g2 != 'sink'):
+    for (g1, g2) in ARCS:
+        if (use_arc[g1, g2].get_value() > 0.5 and g1 != source and g2 != sink):
             if g1 not in schedule:
                 schedule.append(g1)
             if g2 not in schedule:
@@ -241,7 +241,7 @@ def tbfp(distance_data, driving_data, game_data, venue_data,
     print('Total time: {}'.format(end[schedule[-1]] - start[schedule[0]]))
     
     # Optional, plot results
-    if False: # disabled
+    if False:  # disabled
         from map import plot_tbf
         plot_tbf(route, name=str(id(m)))
 
@@ -286,22 +286,22 @@ schd: [
 Run all the experiments for the blog post
 '''
 def experiments():
-    distance_data, driving_data, game_data, venue_data = parse_data()
+    distance_data, game_data, venue_data = parse_data()
     date_range = [
-        [datetime.date(2018,3,29), datetime.date(2018,6,1)],
-        [datetime.date(2018,6,1), datetime.date(2018,8,1)],
-        [datetime.date(2018,8,1), datetime.date(2018,10,1)],
-        [datetime.date(2018,3,29), datetime.date(2018,7,1)],
-        [datetime.date(2018,7,1), datetime.date(2018,10,1)],
-        [datetime.date(2018,3,29), datetime.date(2018,10,1)]
+        [datetime.date(2019,3,28), datetime.date(2019,6,1)],
+        [datetime.date(2019,6,1), datetime.date(2019,8,1)],
+        [datetime.date(2019,8,1), datetime.date(2019,10,1)],
+        [datetime.date(2019,3,28), datetime.date(2019,7,1)],
+        [datetime.date(2019,7,1), datetime.date(2019,10,1)],
+        [datetime.date(2019,3,28), datetime.date(2019,10,1)]
         ]
     obj_type = [0, 1]
     for d in date_range:
         for o in obj_type:
-            tbfp(distance_data, driving_data, game_data, venue_data,
+            tbfp(distance_data, game_data, venue_data,
                  start_date=d[0], end_date=d[1], obj_type=o)
             so.reset_globals()
 
+
 if __name__ == '__main__':
     experiments()
-
