@@ -1,0 +1,50 @@
+objt: 1
+sdat: 2019-08-01
+edat: 2019-10-01
+mont: 2.0
+time: 29.000 days
+dist: 11629.848 miles
+cost: 6677.462 USD
+gams: 802
+vars: 22981
+cons: 834
+data: 65.830 secs
+prep: 15.262 secs
+solv: 554.763 secs
+sdis: 9.569734771 24-25
+ldis: 1185.3030239939 17-18
+stim: 170.0 28-29
+ltim: 3025.0 24-25
+mcri: 70.105 28-29
+schd: [
+1,T-Mobile Park,Blue Jays,Mariners,Seattle,2019-08-23 22:10:00,-122.33202253168501,47.5914138
+2,Oakland Coliseum,Giants,Athletics,Oakland,2019-08-24 21:07:00,-122.19795559999999,37.752263899999996
+3,Dodger Stadium,Yankees,Dodgers,Los Angeles,2019-08-25 19:05:00,-118.240048057792,34.07455235
+4,Oracle Park,Diamondbacks,Giants,San Francisco,2019-08-26 21:45:00,-122.38755900000001,37.7781634
+5,Angel Stadium,Rangers,Angels,Anaheim,2019-08-27 22:07:00,-117.881742627598,33.8002599
+6,Petco Park,Dodgers,Padres,San Diego,2019-08-28 21:10:00,-117.156877452906,32.70718815
+7,Chase Field,Dodgers,Diamondbacks,Phoenix,2019-08-29 21:40:00,-112.066692832931,33.44548555
+8,Coors Field,Pirates,Rockies,Denver,2019-08-30 20:40:00,-104.992928555315,39.756031400000005
+9,Kauffman Stadium,Orioles,Royals,Kansas City,2019-08-31 19:15:00,-94.48047131020269,39.05144525
+10,Busch Stadium,Reds,Cardinals,St. Louis,2019-09-01 14:15:00,-90.1939328538991,38.62252705
+11,Great American Ball Park,Phillies,Reds,Cincinnati,2019-09-02 14:10:00,-84.50662388925079,39.09724845
+12,PNC Park,Marlins,Pirates,Pittsburgh,2019-09-03 19:05:00,-80.005606266122,40.446925799999995
+13,Nationals Park,Mets,Nationals,Washington,2019-09-04 13:05:00,-77.00837209805121,38.87272835
+14,Oriole Park at Camden Yards,Rangers,Orioles,Baltimore,2019-09-05 19:05:00,-76.6224914986542,39.2839823
+15,SunTrust Park,Nationals,Braves,Atlanta,2019-09-06 19:20:00,-84.3816622483595,33.83735535
+16,Tropicana Field,Blue Jays,Rays,St. Petersburg,2019-09-07 18:10:00,-82.6532767848705,27.7680752
+17,Marlins Park,Royals,Marlins,Miami,2019-09-08 13:10:00,-80.21980500744199,25.778247399999998
+18,Minute Maid Park,Athletics,Astros,Houston,2019-09-09 20:10:00,-95.35523391491141,29.75723205
+19,Globe Life Park in Arlington,Rays,Rangers,Arlington,2019-09-10 20:05:00,-97.0834764998413,32.7513904
+20,Guaranteed Rate Field,Royals,White Sox,Chicago,2019-09-11 20:10:00,-87.6336247432872,41.82982395
+21,Comerica Park,Yankees,Tigers,Detroit,2019-09-12 13:10:00,-83.0496353454506,42.33915895
+22,Rogers Centre,Yankees,Blue Jays,Toronto,2019-09-13 19:07:00,-79.3891988236638,43.6416641
+23,Citizens Bank Park,Red Sox,Phillies,Philadelphia,2019-09-14 19:05:00,-75.1654110174725,39.90588575
+24,Citi Field,Dodgers,Mets,Flushing,2019-09-15 13:10:00,-73.8458788494242,40.75727785
+25,Yankee Stadium,Angels,Yankees,Bronx,2019-09-17 18:35:00,-73.92652118491901,40.82958275
+26,Fenway Park,Giants,Red Sox,Boston,2019-09-18 19:10:00,-71.0972244184537,42.34648975
+27,Progressive Field,Tigers,Indians,Cleveland,2019-09-19 19:10:00,-81.68420022215649,41.4960144
+28,Wrigley Field,Cardinals,Cubs,Chicago,2019-09-20 14:20:00,-87.65636056216721,41.9481283
+29,Miller Park,Pirates,Brewers,Milwaukee,2019-09-20 20:10:00,-87.9720970118964,43.0280604
+30,Target Field,Royals,Twins,Minneapolis,2019-09-21 19:10:00,-93.2778457595517,44.9817039
+]

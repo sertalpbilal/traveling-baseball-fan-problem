@@ -1,0 +1,30 @@
+0	Baltimore	Baltimore Orioles	Oriole Park at Camden Yards
+1	Boston	Boston Red Sox	Fenway Park
+2	Chicago	Chicago White Sox	Guaranteed Rate Field
+3	Cleveland	Cleveland Indians	Progressive Field
+4	Detroit	Detroit Tigers	Comerica Park
+5	Houston	Houston Astros	Minute Maid Park
+6	Kansas City	Kansas City Royals	Kauffman Stadium
+7	Anaheim	Los Angeles Angels	Angel Stadium
+8	Minneapolis	Minnesota Twins	Target Field
+9	Bronx	New York Yankees	Yankee Stadium
+10	Oakland	Oakland Athletics	Oakland Coliseum
+11	Seattle	Seattle Mariners	T-Mobile Park
+12	St. Petersburg	Tampa Bay Rays	Tropicana Field
+13	Arlington	Texas Rangers	Globe Life Park in Arlington
+14	Toronto	Toronto Blue Jays	Rogers Centre
+15	Phoenix	Arizona Diamondbacks	Chase Field
+16	Atlanta	Atlanta Braves	SunTrust Park
+17	Chicago	Chicago Cubs	Wrigley Field
+18	Cincinnati	Cincinnati Reds	Great American Ball Park
+19	Denver	Colorado Rockies	Coors Field
+20	Los Angeles	Los Angeles Dodgers	Dodger Stadium
+21	Miami	Miami Marlins	Marlins Park
+22	Milwaukee	Milwaukee Brewers	Miller Park
+23	New York	New York Mets	Citi Field
+24	Philadelphia	Philadelphia Phillies	Citizens Bank Park
+25	Pittsburgh	Pittsburgh Pirates	PNC Park
+26	San Diego	San Diego Padres	Petco Park
+27	San Francisco	San Francisco Giants	Oracle Park
+28	St. Louis	St. Louis Cardinals	Busch Stadium
+29	Washington	Washington Nationals	Nationals Park

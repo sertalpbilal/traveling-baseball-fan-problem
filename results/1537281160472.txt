@@ -1,0 +1,50 @@
+objt: 0
+sdat: 2019-03-28
+edat: 2019-06-01
+mont: 2.2
+time: 24.794 days
+dist: 20007.125 miles
+cost: 8224.969 USD
+gams: 836
+vars: 24301
+cons: 868
+data: 70.557 secs
+prep: 17.964 secs
+solv: 98.118 secs
+sdis: 38.6838244276 11-12
+ldis: 1627.3441164582998 7-8
+stim: 115.0 15-16
+ltim: 1652.0 17-18
+mcri: 10.321666666666715 26-27
+schd: [
+1,Oakland Coliseum,Rangers,Athletics,Oakland,2019-04-23 22:07:00,-122.19795559999999,37.752263899999996
+2,Petco Park,Mariners,Padres,San Diego,2019-04-24 15:40:00,-117.156877452906,32.70718815
+3,Angel Stadium,Yankees,Angels,Anaheim,2019-04-24 22:07:00,-117.881742627598,33.8002599
+4,T-Mobile Park,Rangers,Mariners,Seattle,2019-04-25 22:10:00,-122.33202253168501,47.5914138
+5,Oracle Park,Yankees,Giants,San Francisco,2019-04-26 22:15:00,-122.38755900000001,37.7781634
+6,Chase Field,Cubs,Diamondbacks,Phoenix,2019-04-27 20:10:00,-112.066692832931,33.44548555
+7,Dodger Stadium,Pirates,Dodgers,Los Angeles,2019-04-28 16:10:00,-118.240048057792,34.07455235
+8,Kauffman Stadium,Rays,Royals,Kansas City,2019-04-29 20:15:00,-94.48047131020269,39.05144525
+9,Citi Field,Reds,Mets,Flushing,2019-04-30 19:10:00,-73.8458788494242,40.75727785
+10,Fenway Park,Athletics,Red Sox,Boston,2019-05-01 13:05:00,-71.0972244184537,42.34648975
+11,Nationals Park,Cardinals,Nationals,Washington,2019-05-02 16:05:00,-77.00837209805121,38.87272835
+12,Oriole Park at Camden Yards,Rays,Orioles,Baltimore,2019-05-03 19:05:00,-76.6224914986542,39.2839823
+13,Yankee Stadium,Twins,Yankees,Bronx,2019-05-04 13:05:00,-73.92652118491901,40.82958275
+14,Citizens Bank Park,Nationals,Phillies,Philadelphia,2019-05-04 19:05:00,-75.1654110174725,39.90588575
+15,Miller Park,Mets,Brewers,Milwaukee,2019-05-05 14:10:00,-87.9720970118964,43.0280604
+16,Wrigley Field,Cardinals,Cubs,Chicago,2019-05-05 19:05:00,-87.65636056216721,41.9481283
+17,Great American Ball Park,Giants,Reds,Cincinnati,2019-05-06 12:35:00,-84.50662388925079,39.09724845
+18,Rogers Centre,Twins,Blue Jays,Toronto,2019-05-07 19:07:00,-79.3891988236638,43.6416641
+19,PNC Park,Rangers,Pirates,Pittsburgh,2019-05-08 12:35:00,-80.005606266122,40.446925799999995
+20,Progressive Field,White Sox,Indians,Cleveland,2019-05-08 18:10:00,-81.68420022215649,41.4960144
+21,Minute Maid Park,Rangers,Astros,Houston,2019-05-09 20:10:00,-95.35523391491141,29.75723205
+22,Coors Field,Padres,Rockies,Denver,2019-05-10 20:40:00,-104.992928555315,39.756031400000005
+23,Busch Stadium,Pirates,Cardinals,St. Louis,2019-05-11 14:15:00,-90.1939328538991,38.62252705
+24,Tropicana Field,Yankees,Rays,St. Petersburg,2019-05-12 13:10:00,-82.6532767848705,27.7680752
+25,Target Field,Angels,Twins,Minneapolis,2019-05-13 19:40:00,-93.2778457595517,44.9817039
+26,Comerica Park,Astros,Tigers,Detroit,2019-05-14 19:10:00,-83.0496353454506,42.33915895
+27,Marlins Park,Rays,Marlins,Miami,2019-05-15 19:10:00,-80.21980500744199,25.778247399999998
+28,SunTrust Park,Cardinals,Braves,Atlanta,2019-05-16 19:20:00,-84.3816622483595,33.83735535
+29,Globe Life Park in Arlington,Cardinals,Rangers,Arlington,2019-05-17 20:05:00,-97.0834764998413,32.7513904
+30,Guaranteed Rate Field,Blue Jays,White Sox,Chicago,2019-05-18 14:10:00,-87.6336247432872,41.82982395
+]

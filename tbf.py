@@ -22,7 +22,6 @@ from swat import CAS
 import datetime
 from dateutil import relativedelta
 import time
-from osm import get_driving_times
 
 
 def parse_data():
@@ -292,8 +291,8 @@ def experiments():
         [datetime.date(2019,6,1), datetime.date(2019,8,1)],
         [datetime.date(2019,8,1), datetime.date(2019,10,1)],
         [datetime.date(2019,3,28), datetime.date(2019,7,1)],
-        [datetime.date(2019,7,1), datetime.date(2019,10,1)],
-        [datetime.date(2019,3,28), datetime.date(2019,10,1)]
+        [datetime.date(2019,7,1), datetime.date(2019,10,30)],
+        [datetime.date(2019,3,28), datetime.date(2019,10,30)]
         ]
     obj_type = [0, 1]
     for d in date_range:

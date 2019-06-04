@@ -1,0 +1,31 @@
+,ID,City,Team,Venue,Address,Coords,lat,lon
+0,0,Baltimore,Baltimore Orioles,Oriole Park at Camden Yards,Oriole Park at Camden Yards Baltimore,"('39.2839823', '-76.6224914986542')",-76.6224914986542,39.2839823
+1,1,Boston,Boston Red Sox,Fenway Park,Fenway Park Boston,"('42.34648975', '-71.0972244184537')",-71.0972244184537,42.34648975
+2,2,Chicago,Chicago White Sox,Guaranteed Rate Field,Guaranteed Rate Field Chicago,"('41.82982395', '-87.6336247432872')",-87.6336247432872,41.82982395
+3,3,Cleveland,Cleveland Indians,Progressive Field,Progressive Field Cleveland,"('41.4960144', '-81.6842002221565')",-81.6842002221565,41.4960144
+4,4,Detroit,Detroit Tigers,Comerica Park,Comerica Park Detroit,"('42.33915895', '-83.0496353454506')",-83.0496353454506,42.33915895
+5,5,Houston,Houston Astros,Minute Maid Park,Minute Maid Park Houston,"('29.75723205', '-95.3552339149114')",-95.3552339149114,29.75723205
+6,6,Kansas City,Kansas City Royals,Kauffman Stadium,Kauffman Stadium Kansas City,"('39.05144525', '-94.4804713102027')",-94.4804713102027,39.05144525
+7,7,Anaheim,Los Angeles Angels,Angel Stadium,Angel Stadium Anaheim,"('33.8002599', '-117.881742627598')",-117.881742627598,33.8002599
+8,8,Minneapolis,Minnesota Twins,Target Field,Target Field Minneapolis,"('44.9817039', '-93.2778457595517')",-93.2778457595517,44.9817039
+9,9,Bronx,New York Yankees,Yankee Stadium,Yankee Stadium Bronx,"('40.82958275', '-73.926521184919')",-73.926521184919,40.82958275
+10,10,Oakland,Oakland Athletics,Oakland Coliseum,Oakland Coliseum Oakland,"('37.7522639', '-122.1979556')",-122.1979556,37.7522639
+11,11,Seattle,Seattle Mariners,T-Mobile Park,T-Mobile Park Seattle,"('47.5914138', '-122.332022531685')",-122.332022531685,47.5914138
+12,12,St. Petersburg,Tampa Bay Rays,Tropicana Field,Tropicana Field St. Petersburg,"('27.7680752', '-82.6532767848705')",-82.6532767848705,27.7680752
+13,13,Arlington,Texas Rangers,Globe Life Park in Arlington,Globe Life Park in Arlington Arlington,"('32.7513904', '-97.0834764998413')",-97.0834764998413,32.7513904
+14,14,Toronto,Toronto Blue Jays,Rogers Centre,Rogers Centre Toronto,"('43.6416641', '-79.3891988236638')",-79.3891988236638,43.6416641
+15,15,Phoenix,Arizona Diamondbacks,Chase Field,Chase Field Phoenix,"('33.44548555', '-112.066692832931')",-112.066692832931,33.44548555
+16,16,Atlanta,Atlanta Braves,SunTrust Park,SunTrust Park Atlanta,"('33.83735535', '-84.3816622483595')",-84.3816622483595,33.83735535
+17,17,Chicago,Chicago Cubs,Wrigley Field,Wrigley Field Chicago,"('41.9481283', '-87.6563605621672')",-87.6563605621672,41.9481283
+18,18,Cincinnati,Cincinnati Reds,Great American Ball Park,Great American Ball Park Cincinnati,"('39.09724845', '-84.5066238892508')",-84.5066238892508,39.09724845
+19,19,Denver,Colorado Rockies,Coors Field,Coors Field Denver,"('39.7560314', '-104.992928555315')",-104.992928555315,39.7560314
+20,20,Los Angeles,Los Angeles Dodgers,Dodger Stadium,Dodger Stadium Los Angeles,"('34.07455235', '-118.240048057792')",-118.240048057792,34.07455235
+21,21,Miami,Miami Marlins,Marlins Park,Marlins Park Miami,"('25.7782474', '-80.219805007442')",-80.219805007442,25.7782474
+22,22,Milwaukee,Milwaukee Brewers,Miller Park,Miller Park Milwaukee,"('43.0280604', '-87.9720970118964')",-87.9720970118964,43.0280604
+23,23,New York,New York Mets,Citi Field,Citi Field New York,"('40.75727785', '-73.8458788494242')",-73.8458788494242,40.75727785
+24,24,Philadelphia,Philadelphia Phillies,Citizens Bank Park,Citizens Bank Park Philadelphia,"('39.90588575', '-75.1654110174725')",-75.1654110174725,39.90588575
+25,25,Pittsburgh,Pittsburgh Pirates,PNC Park,PNC Park Pittsburgh,"('40.4469258', '-80.005606266122')",-80.005606266122,40.4469258
+26,26,San Diego,San Diego Padres,Petco Park,Petco Park San Diego,"('32.70718815', '-117.156877452906')",-117.156877452906,32.70718815
+27,27,San Francisco,San Francisco Giants,Oracle Park,Oracle Park San Francisco,"('37.7781634', '-122.387559')",-122.387559,37.7781634
+28,28,St. Louis,St. Louis Cardinals,Busch Stadium,Busch Stadium St. Louis,"('38.62252705', '-90.1939328538991')",-90.1939328538991,38.62252705
+29,29,Washington,Washington Nationals,Nationals Park,Nationals Park Washington,"('38.87272835', '-77.0083720980512')",-77.0083720980512,38.87272835
