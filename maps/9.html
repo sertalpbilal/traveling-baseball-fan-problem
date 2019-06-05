@@ -1,1059 +1,1090 @@
 <!DOCTYPE html>
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1ecb3ca59a6b4ece8131b1d3033eab0b {
-                position : relative;
-                width : 100.0%;
-                height: 100.0%;
-                left: 0.0%;
-                top: 0.0%;
-                }
-            </style>
-        
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_20d1066d839a43b9a8efe74c82f40b8c {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1ecb3ca59a6b4ece8131b1d3033eab0b" ></div>
-        
+    <div class="folium-map" id="map_20d1066d839a43b9a8efe74c82f40b8c" ></div>
 </body>
 <script>    
     
+    
+        var bounds = null;
+    
 
-            
-                var bounds = null;
-            
+    var map_20d1066d839a43b9a8efe74c82f40b8c = L.map(
+        'map_20d1066d839a43b9a8efe74c82f40b8c', {
+        center: [39.82, -98.58],
+        zoom: 5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
 
-            var map_1ecb3ca59a6b4ece8131b1d3033eab0b = L.map(
-                                  'map_1ecb3ca59a6b4ece8131b1d3033eab0b',
-                                  {center: [39.82,-98.58],
-                                  zoom: 4,
-                                  maxBounds: bounds,
-                                  layers: [],
-                                  worldCopyJump: false,
-                                  crs: L.CRS.EPSG3857
-                                 });
-            
+
+    
+    var tile_layer_cfcbcd0e89f94534b55e494457468436 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+    
+        var marker_cb6c55da23684908a61f27ac616745aa = L.marker(
+            [44.9817039, -93.2778457595517],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
         
     
-            var tile_layer_5d1e0d9955344a10a369d3f44109369e = L.tileLayer(
-                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                {
-  "attribution": null,
-  "detectRetina": false,
-  "maxZoom": 18,
-  "minZoom": 1,
-  "noWrap": false,
-  "subdomains": "abc"
-}
-                ).addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-        
-    
 
-            var marker_0a96b070ae8c424aa641f14fcfe354c5 = L.marker(
-                [32.707656300000004,-117.15690430000001],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
-    
-
-                var div_icon_138a821656b140999904d08e8e629d82 = L.divIcon({
+                var div_icon_60fbfc27e7d54fe0b23874f133c14d2b = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">1</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">1</strong>`,
                     });
-                marker_0a96b070ae8c424aa641f14fcfe354c5.setIcon(div_icon_138a821656b140999904d08e8e629d82);
+                marker_cb6c55da23684908a61f27ac616745aa.setIcon(div_icon_60fbfc27e7d54fe0b23874f133c14d2b);
             
     
-            var popup_e5009e5fd39344969ad49e43eeddccf4 = L.popup({maxWidth: '300'});
+            var popup_cd6c0a9bd2d44bfd895131ae0a934d57 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_5312d5e6cdf444f6a7a90bd0be8d1e85 = $('<div id="html_5312d5e6cdf444f6a7a90bd0be8d1e85" style="width: 100.0%; height: 100.0%;">             Game 1: Rockies @ Padres<br>             Petco Park, San Diego<br>             Friday, August 31, 2018 - 10:10 PM                         </div>')[0];
-                popup_e5009e5fd39344969ad49e43eeddccf4.setContent(html_5312d5e6cdf444f6a7a90bd0be8d1e85);
+                var html_ee8560ce322044c9870e5380cc2f2421 = $(`<div id="html_ee8560ce322044c9870e5380cc2f2421" style="width: 100.0%; height: 100.0%;">         Game 1: Mets @ Twins<br>         Target Field, Minneapolis<br>         2019-07-16 20:10:00                     </div>`)[0];
+                popup_cd6c0a9bd2d44bfd895131ae0a934d57.setContent(html_ee8560ce322044c9870e5380cc2f2421);
             
 
-            marker_0a96b070ae8c424aa641f14fcfe354c5.bindPopup(popup_e5009e5fd39344969ad49e43eeddccf4);
+            marker_cb6c55da23684908a61f27ac616745aa.bindPopup(popup_cd6c0a9bd2d44bfd895131ae0a934d57)
+            ;
 
             
         
     
-
-            var marker_0d25c7bf480b4b46add3444667e50e29 = L.marker(
-                [37.7785951,-122.38926979999998],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_16a3f31f43bc430bb8ab42d34592712a = L.marker(
+            [38.62252705, -90.1939328538991],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_724926332c6f4d7b8117de825978df01 = L.divIcon({
+                var div_icon_b7b62e81a5674db0af0e25140f965e42 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">2</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">2</strong>`,
                     });
-                marker_0d25c7bf480b4b46add3444667e50e29.setIcon(div_icon_724926332c6f4d7b8117de825978df01);
+                marker_16a3f31f43bc430bb8ab42d34592712a.setIcon(div_icon_b7b62e81a5674db0af0e25140f965e42);
             
     
-            var popup_570f03ab7f0f480189e84da133b63ab0 = L.popup({maxWidth: '300'});
+            var popup_5fbae6f3b9614c299babd056e899aadb = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_968436a8aa554cca8ed640439c74f97d = $('<div id="html_968436a8aa554cca8ed640439c74f97d" style="width: 100.0%; height: 100.0%;">             Game 2: Mets @ Giants<br>             AT&T Park, San Francisco<br>             Saturday, September 01, 2018 - 04:05 PM                         </div>')[0];
-                popup_570f03ab7f0f480189e84da133b63ab0.setContent(html_968436a8aa554cca8ed640439c74f97d);
+                var html_b48058dd6e41403398defbe8cb2215c8 = $(`<div id="html_b48058dd6e41403398defbe8cb2215c8" style="width: 100.0%; height: 100.0%;">         Game 2: Pirates @ Cardinals<br>         Busch Stadium, St. Louis<br>         2019-07-17 13:15:00                     </div>`)[0];
+                popup_5fbae6f3b9614c299babd056e899aadb.setContent(html_b48058dd6e41403398defbe8cb2215c8);
             
 
-            marker_0d25c7bf480b4b46add3444667e50e29.bindPopup(popup_570f03ab7f0f480189e84da133b63ab0);
+            marker_16a3f31f43bc430bb8ab42d34592712a.bindPopup(popup_5fbae6f3b9614c299babd056e899aadb)
+            ;
 
             
         
     
-
-            var marker_da5587abeb234150b7e5f280b387bec5 = L.marker(
-                [37.7515946,-122.20054579999999],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_e6f9a928e8a144849fd8e083f1527a80 = L.marker(
+            [39.05144525, -94.48047131020269],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_0cbcce6240424ea3a43bef69b4d4e189 = L.divIcon({
+                var div_icon_c4a567af6a974bbfa3b15c983c8860b9 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">3</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">3</strong>`,
                     });
-                marker_da5587abeb234150b7e5f280b387bec5.setIcon(div_icon_0cbcce6240424ea3a43bef69b4d4e189);
+                marker_e6f9a928e8a144849fd8e083f1527a80.setIcon(div_icon_c4a567af6a974bbfa3b15c983c8860b9);
             
     
-            var popup_92223362f0bc4bcb8a6bfb629554a378 = L.popup({maxWidth: '300'});
+            var popup_fe92b6290983432c9c1d1a6ffd865077 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_31a450b29bf44b62a5f40579475e0bba = $('<div id="html_31a450b29bf44b62a5f40579475e0bba" style="width: 100.0%; height: 100.0%;">             Game 3: Mariners @ Athletics<br>             Oakland Coliseum, Oakland<br>             Saturday, September 01, 2018 - 09:05 PM                         </div>')[0];
-                popup_92223362f0bc4bcb8a6bfb629554a378.setContent(html_31a450b29bf44b62a5f40579475e0bba);
+                var html_886849cee7304a43b7981533e9c1713d = $(`<div id="html_886849cee7304a43b7981533e9c1713d" style="width: 100.0%; height: 100.0%;">         Game 3: White Sox @ Royals<br>         Kauffman Stadium, Kansas City<br>         2019-07-17 20:15:00                     </div>`)[0];
+                popup_fe92b6290983432c9c1d1a6ffd865077.setContent(html_886849cee7304a43b7981533e9c1713d);
             
 
-            marker_da5587abeb234150b7e5f280b387bec5.bindPopup(popup_92223362f0bc4bcb8a6bfb629554a378);
+            marker_e6f9a928e8a144849fd8e083f1527a80.bindPopup(popup_fe92b6290983432c9c1d1a6ffd865077)
+            ;
 
             
         
     
-
-            var marker_93445b892f9649c09a2348423f9f5bcd = L.marker(
-                [34.073851,-118.23995829999998],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_03a9743d463247a5a1ad5075d7dde80d = L.marker(
+            [33.83735535, -84.3816622483595],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_1bf225393ef944c19434bdb32b1057b2 = L.divIcon({
+                var div_icon_ea063e5690e847419547c5199bfa81c8 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">4</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">4</strong>`,
                     });
-                marker_93445b892f9649c09a2348423f9f5bcd.setIcon(div_icon_1bf225393ef944c19434bdb32b1057b2);
+                marker_03a9743d463247a5a1ad5075d7dde80d.setIcon(div_icon_ea063e5690e847419547c5199bfa81c8);
             
     
-            var popup_f6fb769244b24fa196c6b35f43322209 = L.popup({maxWidth: '300'});
+            var popup_a3159fea4fee4d06b5620d63846d21c8 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_6c5cb4064c61468abf05fd8cba7af472 = $('<div id="html_6c5cb4064c61468abf05fd8cba7af472" style="width: 100.0%; height: 100.0%;">             Game 4: Diamondbacks @ Dodgers<br>             Dodger Stadium, Los Angeles<br>             Sunday, September 02, 2018 - 04:10 PM                         </div>')[0];
-                popup_f6fb769244b24fa196c6b35f43322209.setContent(html_6c5cb4064c61468abf05fd8cba7af472);
+                var html_6796a7e82d4f400eb8d6c6b794aa2438 = $(`<div id="html_6796a7e82d4f400eb8d6c6b794aa2438" style="width: 100.0%; height: 100.0%;">         Game 4: Nationals @ Braves<br>         SunTrust Park, Atlanta<br>         2019-07-18 19:20:00                     </div>`)[0];
+                popup_a3159fea4fee4d06b5620d63846d21c8.setContent(html_6796a7e82d4f400eb8d6c6b794aa2438);
             
 
-            marker_93445b892f9649c09a2348423f9f5bcd.bindPopup(popup_f6fb769244b24fa196c6b35f43322209);
+            marker_03a9743d463247a5a1ad5075d7dde80d.bindPopup(popup_a3159fea4fee4d06b5620d63846d21c8)
+            ;
 
             
         
     
-
-            var marker_471e451aa5fd42fab471e3cf1400cda4 = L.marker(
-                [47.5914026,-122.3325085],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_7b1a706bf7494006a3cc3260727e123d = L.marker(
+            [41.9481283, -87.65636056216721],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_b2ac32d2f43940edac2d0d855d3a0230 = L.divIcon({
+                var div_icon_7c25c7aec5c7482ba3f096696ac56de2 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">5</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">5</strong>`,
                     });
-                marker_471e451aa5fd42fab471e3cf1400cda4.setIcon(div_icon_b2ac32d2f43940edac2d0d855d3a0230);
+                marker_7b1a706bf7494006a3cc3260727e123d.setIcon(div_icon_7c25c7aec5c7482ba3f096696ac56de2);
             
     
-            var popup_0ea62543299d419ab23ac1ef3aaa6710 = L.popup({maxWidth: '300'});
+            var popup_448fb30e0f7b45ebb829a663f94ca1b2 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_c77e83126a0a4e6fa8f30b85a0a8fa52 = $('<div id="html_c77e83126a0a4e6fa8f30b85a0a8fa52" style="width: 100.0%; height: 100.0%;">             Game 5: Orioles @ Mariners<br>             Safeco Field, Seattle<br>             Monday, September 03, 2018 - 09:10 PM                         </div>')[0];
-                popup_0ea62543299d419ab23ac1ef3aaa6710.setContent(html_c77e83126a0a4e6fa8f30b85a0a8fa52);
+                var html_7a30c49dec1b4fba8683380e7f68a006 = $(`<div id="html_7a30c49dec1b4fba8683380e7f68a006" style="width: 100.0%; height: 100.0%;">         Game 5: Padres @ Cubs<br>         Wrigley Field, Chicago<br>         2019-07-19 14:20:00                     </div>`)[0];
+                popup_448fb30e0f7b45ebb829a663f94ca1b2.setContent(html_7a30c49dec1b4fba8683380e7f68a006);
             
 
-            marker_471e451aa5fd42fab471e3cf1400cda4.bindPopup(popup_0ea62543299d419ab23ac1ef3aaa6710);
+            marker_7b1a706bf7494006a3cc3260727e123d.bindPopup(popup_448fb30e0f7b45ebb829a663f94ca1b2)
+            ;
 
             
         
     
-
-            var marker_20406e6a65054b4eaabc8ea708e4f067 = L.marker(
-                [39.755882299999996,-104.9941781],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_fa815cc110464b408677e5e94fc50b4c = L.marker(
+            [27.7680752, -82.6532767848705],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_085a60db10d54784a3d177c24d99395b = L.divIcon({
+                var div_icon_d1a45cc821d14ccb89efe0876dcc374e = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">6</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">6</strong>`,
                     });
-                marker_20406e6a65054b4eaabc8ea708e4f067.setIcon(div_icon_085a60db10d54784a3d177c24d99395b);
+                marker_fa815cc110464b408677e5e94fc50b4c.setIcon(div_icon_d1a45cc821d14ccb89efe0876dcc374e);
             
     
-            var popup_3b29ba40f7654ddda2204cf9b41b5d46 = L.popup({maxWidth: '300'});
+            var popup_30de6e00eee6413ba862ed1557702322 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_90f9efe1bff846cbb0a01d3b25c6a551 = $('<div id="html_90f9efe1bff846cbb0a01d3b25c6a551" style="width: 100.0%; height: 100.0%;">             Game 6: Giants @ Rockies<br>             Coors Field, Denver<br>             Tuesday, September 04, 2018 - 08:40 PM                         </div>')[0];
-                popup_3b29ba40f7654ddda2204cf9b41b5d46.setContent(html_90f9efe1bff846cbb0a01d3b25c6a551);
+                var html_d022948f83ce43f0a15a7551c533ff9e = $(`<div id="html_d022948f83ce43f0a15a7551c533ff9e" style="width: 100.0%; height: 100.0%;">         Game 6: White Sox @ Rays<br>         Tropicana Field, St. Petersburg<br>         2019-07-20 18:10:00                     </div>`)[0];
+                popup_30de6e00eee6413ba862ed1557702322.setContent(html_d022948f83ce43f0a15a7551c533ff9e);
             
 
-            marker_20406e6a65054b4eaabc8ea708e4f067.bindPopup(popup_3b29ba40f7654ddda2204cf9b41b5d46);
+            marker_fa815cc110464b408677e5e94fc50b4c.bindPopup(popup_30de6e00eee6413ba862ed1557702322)
+            ;
 
             
         
     
-
-            var marker_63e3795fc9da4dcea5ffd3ae39d4e784 = L.marker(
-                [41.8299021,-87.6337522],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_9ada44a49b72496f9e95f462f661661e = L.marker(
+            [29.75723205, -95.35523391491141],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_b3efd11d9ba34f18a3bdf0ea005f0e6a = L.divIcon({
+                var div_icon_3addb81016364808996d9c139ce0df51 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">7</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">7</strong>`,
                     });
-                marker_63e3795fc9da4dcea5ffd3ae39d4e784.setIcon(div_icon_b3efd11d9ba34f18a3bdf0ea005f0e6a);
+                marker_9ada44a49b72496f9e95f462f661661e.setIcon(div_icon_3addb81016364808996d9c139ce0df51);
             
     
-            var popup_4666504f99734d5886014780e22e2612 = L.popup({maxWidth: '300'});
+            var popup_616930136bbf4ddcb3e2d9e6ae52f587 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_9a8450da6c164c2888e2ecfb6cdc7a96 = $('<div id="html_9a8450da6c164c2888e2ecfb6cdc7a96" style="width: 100.0%; height: 100.0%;">             Game 7: Tigers @ White Sox<br>             Guaranteed Rate Field, Chicago<br>             Wednesday, September 05, 2018 - 08:10 PM                         </div>')[0];
-                popup_4666504f99734d5886014780e22e2612.setContent(html_9a8450da6c164c2888e2ecfb6cdc7a96);
+                var html_9aee340ef0e44195941a9141f40c559f = $(`<div id="html_9aee340ef0e44195941a9141f40c559f" style="width: 100.0%; height: 100.0%;">         Game 7: Rangers @ Astros<br>         Minute Maid Park, Houston<br>         2019-07-21 14:10:00                     </div>`)[0];
+                popup_616930136bbf4ddcb3e2d9e6ae52f587.setContent(html_9aee340ef0e44195941a9141f40c559f);
             
 
-            marker_63e3795fc9da4dcea5ffd3ae39d4e784.bindPopup(popup_4666504f99734d5886014780e22e2612);
+            marker_9ada44a49b72496f9e95f462f661661e.bindPopup(popup_616930136bbf4ddcb3e2d9e6ae52f587)
+            ;
 
             
         
     
-
-            var marker_41960120e10e4a9eb3ceaa14f5d1d810 = L.marker(
-                [43.6414378,-79.3893532],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_127138d177d143f997cc3992428d48e5 = L.marker(
+            [33.44548555, -112.066692832931],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_186f2aa96ede4890bb579df98eca2d1c = L.divIcon({
+                var div_icon_0ad9a5c7690043b3b07b5437f6f53439 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">8</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">8</strong>`,
                     });
-                marker_41960120e10e4a9eb3ceaa14f5d1d810.setIcon(div_icon_186f2aa96ede4890bb579df98eca2d1c);
+                marker_127138d177d143f997cc3992428d48e5.setIcon(div_icon_0ad9a5c7690043b3b07b5437f6f53439);
             
     
-            var popup_fb8b2580ec704b53a2b55916a61174a2 = L.popup({maxWidth: '300'});
+            var popup_689ddee7e9bb49d6a82bac04c1277018 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_71032ac76ee1463d9e831e941f4028c5 = $('<div id="html_71032ac76ee1463d9e831e941f4028c5" style="width: 100.0%; height: 100.0%;">             Game 8: Indians @ Blue Jays<br>             Rogers Centre, Toronto<br>             Thursday, September 06, 2018 - 07:07 PM                         </div>')[0];
-                popup_fb8b2580ec704b53a2b55916a61174a2.setContent(html_71032ac76ee1463d9e831e941f4028c5);
+                var html_14e7ac94e4bd445c9f727314d394447b = $(`<div id="html_14e7ac94e4bd445c9f727314d394447b" style="width: 100.0%; height: 100.0%;">         Game 8: Orioles @ Diamondbacks<br>         Chase Field, Phoenix<br>         2019-07-22 21:40:00                     </div>`)[0];
+                popup_689ddee7e9bb49d6a82bac04c1277018.setContent(html_14e7ac94e4bd445c9f727314d394447b);
             
 
-            marker_41960120e10e4a9eb3ceaa14f5d1d810.bindPopup(popup_fb8b2580ec704b53a2b55916a61174a2);
+            marker_127138d177d143f997cc3992428d48e5.bindPopup(popup_689ddee7e9bb49d6a82bac04c1277018)
+            ;
 
             
         
     
-
-            var marker_32f3360569dc44ff8ef4710cb2509615 = L.marker(
-                [40.4468548,-80.0056657],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_0690e43b8cf540ad885f3d8fff1a58fc = L.marker(
+            [37.7781634, -122.38755900000001],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_060ff5d777fa41dc8a31f3f5edd9e871 = L.divIcon({
+                var div_icon_68e460e7b4bd4e8cabf64e26b1b95424 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">9</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">9</strong>`,
                     });
-                marker_32f3360569dc44ff8ef4710cb2509615.setIcon(div_icon_060ff5d777fa41dc8a31f3f5edd9e871);
+                marker_0690e43b8cf540ad885f3d8fff1a58fc.setIcon(div_icon_68e460e7b4bd4e8cabf64e26b1b95424);
             
     
-            var popup_6766a5ddeee64a48bc5cd3d9f2eb84d8 = L.popup({maxWidth: '300'});
+            var popup_7f6b08acfe0046d4bae186a6cfcd10f8 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_4367656756f945bea56b57375f92c0ce = $('<div id="html_4367656756f945bea56b57375f92c0ce" style="width: 100.0%; height: 100.0%;">             Game 9: Marlins @ Pirates<br>             PNC Park, Pittsburgh<br>             Friday, September 07, 2018 - 07:05 PM                         </div>')[0];
-                popup_6766a5ddeee64a48bc5cd3d9f2eb84d8.setContent(html_4367656756f945bea56b57375f92c0ce);
+                var html_d1c8291bf83544e1b971dcdfe17143e6 = $(`<div id="html_d1c8291bf83544e1b971dcdfe17143e6" style="width: 100.0%; height: 100.0%;">         Game 9: Cubs @ Giants<br>         Oracle Park, San Francisco<br>         2019-07-23 21:45:00                     </div>`)[0];
+                popup_7f6b08acfe0046d4bae186a6cfcd10f8.setContent(html_d1c8291bf83544e1b971dcdfe17143e6);
             
 
-            marker_32f3360569dc44ff8ef4710cb2509615.bindPopup(popup_6766a5ddeee64a48bc5cd3d9f2eb84d8);
+            marker_0690e43b8cf540ad885f3d8fff1a58fc.bindPopup(popup_7f6b08acfe0046d4bae186a6cfcd10f8)
+            ;
 
             
         
     
-
-            var marker_1be6d11eddae464b90e1e52f1b049c22 = L.marker(
-                [27.768224600000003,-82.65339209999999],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_d4d9935a40ec44d58ea600c0efaa0a91 = L.marker(
+            [34.07455235, -118.240048057792],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_9fe5ba1cc1714c9c9e6d6cd40087d21e = L.divIcon({
+                var div_icon_aa8e07c9c55849069ee2d36483417e9e = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">10</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">10</strong>`,
                     });
-                marker_1be6d11eddae464b90e1e52f1b049c22.setIcon(div_icon_9fe5ba1cc1714c9c9e6d6cd40087d21e);
+                marker_d4d9935a40ec44d58ea600c0efaa0a91.setIcon(div_icon_aa8e07c9c55849069ee2d36483417e9e);
             
     
-            var popup_c31b23d434b04c34aeba99689d027dd2 = L.popup({maxWidth: '300'});
+            var popup_d4591ddefdea4b5a8efc66f8691693fe = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_4c9852f03bbe4b3d9fda27107534ee31 = $('<div id="html_4c9852f03bbe4b3d9fda27107534ee31" style="width: 100.0%; height: 100.0%;">             Game 10: Orioles @ Rays<br>             Tropicana Field, St. Petersburg<br>             Saturday, September 08, 2018 - 06:10 PM                         </div>')[0];
-                popup_c31b23d434b04c34aeba99689d027dd2.setContent(html_4c9852f03bbe4b3d9fda27107534ee31);
+                var html_9d367cc8044044a5bf8b418d49528bcd = $(`<div id="html_9d367cc8044044a5bf8b418d49528bcd" style="width: 100.0%; height: 100.0%;">         Game 10: Angels @ Dodgers<br>         Dodger Stadium, Los Angeles<br>         2019-07-24 22:10:00                     </div>`)[0];
+                popup_d4591ddefdea4b5a8efc66f8691693fe.setContent(html_9d367cc8044044a5bf8b418d49528bcd);
             
 
-            marker_1be6d11eddae464b90e1e52f1b049c22.bindPopup(popup_c31b23d434b04c34aeba99689d027dd2);
+            marker_d4d9935a40ec44d58ea600c0efaa0a91.bindPopup(popup_d4591ddefdea4b5a8efc66f8691693fe)
+            ;
 
             
         
     
-
-            var marker_c46b631b777043b2a3f29fde2503f82c = L.marker(
-                [38.8730102,-77.0074329],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_c0e3c03a9bb4432fb43710c575caad5a = L.marker(
+            [33.8002599, -117.881742627598],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_46e50950448d478d867f0d6e3a3ce78b = L.divIcon({
+                var div_icon_7ddca24e966a4968bacacd8ab82a7901 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">11</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">11</strong>`,
                     });
-                marker_c46b631b777043b2a3f29fde2503f82c.setIcon(div_icon_46e50950448d478d867f0d6e3a3ce78b);
+                marker_c0e3c03a9bb4432fb43710c575caad5a.setIcon(div_icon_7ddca24e966a4968bacacd8ab82a7901);
             
     
-            var popup_faf71964f1764c188d8c74d3861eb919 = L.popup({maxWidth: '300'});
+            var popup_1fb9070d76a7422d843ef031704f1a52 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_cfa154623d274bcf8aaa812fab400429 = $('<div id="html_cfa154623d274bcf8aaa812fab400429" style="width: 100.0%; height: 100.0%;">             Game 11: Cubs @ Nationals<br>             Nationals Park, Washington<br>             Sunday, September 09, 2018 - 01:35 PM                         </div>')[0];
-                popup_faf71964f1764c188d8c74d3861eb919.setContent(html_cfa154623d274bcf8aaa812fab400429);
+                var html_183048add6084de1b45d2cd8e92d62b1 = $(`<div id="html_183048add6084de1b45d2cd8e92d62b1" style="width: 100.0%; height: 100.0%;">         Game 11: Orioles @ Angels<br>         Angel Stadium, Anaheim<br>         2019-07-25 22:07:00                     </div>`)[0];
+                popup_1fb9070d76a7422d843ef031704f1a52.setContent(html_183048add6084de1b45d2cd8e92d62b1);
             
 
-            marker_c46b631b777043b2a3f29fde2503f82c.bindPopup(popup_faf71964f1764c188d8c74d3861eb919);
+            marker_c0e3c03a9bb4432fb43710c575caad5a.bindPopup(popup_1fb9070d76a7422d843ef031704f1a52)
+            ;
 
             
         
     
-
-            var marker_e1db4f770ed04ae3b20c8c7e68cc9172 = L.marker(
-                [39.0979313,-84.508151],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_a4c88651366d46699ff38676fbf5bf29 = L.marker(
+            [47.5914138, -122.33202253168501],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_6f50c754e4dc40c5830194e9fc582466 = L.divIcon({
+                var div_icon_f75ab191480c4534990001380e810f98 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">12</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">12</strong>`,
                     });
-                marker_e1db4f770ed04ae3b20c8c7e68cc9172.setIcon(div_icon_6f50c754e4dc40c5830194e9fc582466);
+                marker_a4c88651366d46699ff38676fbf5bf29.setIcon(div_icon_f75ab191480c4534990001380e810f98);
             
     
-            var popup_8507dd1db6d8428ca2cb179c5726985c = L.popup({maxWidth: '300'});
+            var popup_cd40541f5996479d9d600615aaed6cdf = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_cc2a312d7ff54e56ac3579db4d6d744f = $('<div id="html_cc2a312d7ff54e56ac3579db4d6d744f" style="width: 100.0%; height: 100.0%;">             Game 12: Dodgers @ Reds<br>             Great American Ball Park, Cincinnati<br>             Monday, September 10, 2018 - 06:40 PM                         </div>')[0];
-                popup_8507dd1db6d8428ca2cb179c5726985c.setContent(html_cc2a312d7ff54e56ac3579db4d6d744f);
+                var html_dea7bc1b1eb74d2da4d9cfeea3cccde8 = $(`<div id="html_dea7bc1b1eb74d2da4d9cfeea3cccde8" style="width: 100.0%; height: 100.0%;">         Game 12: Tigers @ Mariners<br>         T-Mobile Park, Seattle<br>         2019-07-26 22:10:00                     </div>`)[0];
+                popup_cd40541f5996479d9d600615aaed6cdf.setContent(html_dea7bc1b1eb74d2da4d9cfeea3cccde8);
             
 
-            marker_e1db4f770ed04ae3b20c8c7e68cc9172.bindPopup(popup_8507dd1db6d8428ca2cb179c5726985c);
+            marker_a4c88651366d46699ff38676fbf5bf29.bindPopup(popup_cd40541f5996479d9d600615aaed6cdf)
+            ;
 
             
         
     
-
-            var marker_b62b9d6cb7e749b09354fea7a7f9af79 = L.marker(
-                [44.9817656,-93.277514],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_85be15c1af5c4e13a2a7cacf863f956f = L.marker(
+            [37.752263899999996, -122.19795559999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_c0c1f56c770d4aa19cc6df507b1f7ef9 = L.divIcon({
+                var div_icon_1157179c9f704f71ae5d963f257ead33 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">13</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">13</strong>`,
                     });
-                marker_b62b9d6cb7e749b09354fea7a7f9af79.setIcon(div_icon_c0c1f56c770d4aa19cc6df507b1f7ef9);
+                marker_85be15c1af5c4e13a2a7cacf863f956f.setIcon(div_icon_1157179c9f704f71ae5d963f257ead33);
             
     
-            var popup_bc8e71dde78742d9886e6bf7b805665a = L.popup({maxWidth: '300'});
+            var popup_977084397ee6421e8e31365a7d0c970d = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_a83cb8a921934fff82307cb10d325658 = $('<div id="html_a83cb8a921934fff82307cb10d325658" style="width: 100.0%; height: 100.0%;">             Game 13: Yankees @ Twins<br>             Target Field, Minneapolis<br>             Tuesday, September 11, 2018 - 08:10 PM                         </div>')[0];
-                popup_bc8e71dde78742d9886e6bf7b805665a.setContent(html_a83cb8a921934fff82307cb10d325658);
+                var html_9dbccac777374b89be25c6ea29618ae5 = $(`<div id="html_9dbccac777374b89be25c6ea29618ae5" style="width: 100.0%; height: 100.0%;">         Game 13: Rangers @ Athletics<br>         Oakland Coliseum, Oakland<br>         2019-07-27 21:07:00                     </div>`)[0];
+                popup_977084397ee6421e8e31365a7d0c970d.setContent(html_9dbccac777374b89be25c6ea29618ae5);
             
 
-            marker_b62b9d6cb7e749b09354fea7a7f9af79.bindPopup(popup_bc8e71dde78742d9886e6bf7b805665a);
+            marker_85be15c1af5c4e13a2a7cacf863f956f.bindPopup(popup_977084397ee6421e8e31365a7d0c970d)
+            ;
 
             
         
     
-
-            var marker_8b4dfdfb4d5a44979699aac8ea79d633 = L.marker(
-                [38.6226188,-90.1928209],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_2a17262c953944edb75caa386a9d62ea = L.marker(
+            [32.70718815, -117.156877452906],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_bcec90a6a1b24278ac16f287989c2497 = L.divIcon({
+                var div_icon_dd8beeb624124c27a6ae3e3ee00a3e7e = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">14</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">14</strong>`,
                     });
-                marker_8b4dfdfb4d5a44979699aac8ea79d633.setIcon(div_icon_bcec90a6a1b24278ac16f287989c2497);
+                marker_2a17262c953944edb75caa386a9d62ea.setIcon(div_icon_dd8beeb624124c27a6ae3e3ee00a3e7e);
             
     
-            var popup_a51f6fd4d02e4566ba977ef473043816 = L.popup({maxWidth: '300'});
+            var popup_23adbaf8644e43c88636564adb98e2f3 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_d55ebf738d3e4f3e940674cb4ced9401 = $('<div id="html_d55ebf738d3e4f3e940674cb4ced9401" style="width: 100.0%; height: 100.0%;">             Game 14: Pirates @ Cardinals<br>             Busch Stadium, St. Louis<br>             Wednesday, September 12, 2018 - 01:15 PM                         </div>')[0];
-                popup_a51f6fd4d02e4566ba977ef473043816.setContent(html_d55ebf738d3e4f3e940674cb4ced9401);
+                var html_6a45432a151144ec955761f41b03bed5 = $(`<div id="html_6a45432a151144ec955761f41b03bed5" style="width: 100.0%; height: 100.0%;">         Game 14: Giants @ Padres<br>         Petco Park, San Diego<br>         2019-07-28 16:10:00                     </div>`)[0];
+                popup_23adbaf8644e43c88636564adb98e2f3.setContent(html_6a45432a151144ec955761f41b03bed5);
             
 
-            marker_8b4dfdfb4d5a44979699aac8ea79d633.bindPopup(popup_a51f6fd4d02e4566ba977ef473043816);
+            marker_2a17262c953944edb75caa386a9d62ea.bindPopup(popup_23adbaf8644e43c88636564adb98e2f3)
+            ;
 
             
         
     
-
-            var marker_7077cf7ea2d14405a17a8349132b193e = L.marker(
-                [39.051671899999995,-94.4803142],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_699271b2604448c0a29b64dd7b8533c9 = L.marker(
+            [39.756031400000005, -104.992928555315],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_94343a36e92741ecb41389798d6ac881 = L.divIcon({
+                var div_icon_440985e07475454ea9df9ac681a1c511 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">15</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">15</strong>`,
                     });
-                marker_7077cf7ea2d14405a17a8349132b193e.setIcon(div_icon_94343a36e92741ecb41389798d6ac881);
+                marker_699271b2604448c0a29b64dd7b8533c9.setIcon(div_icon_440985e07475454ea9df9ac681a1c511);
             
     
-            var popup_64d40f18e477454c9bd8bc4b0aa04aa4 = L.popup({maxWidth: '300'});
+            var popup_ed63422f065b49edb5308197497e41ae = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_4f39d8a7a6f341eb938773283e4e058e = $('<div id="html_4f39d8a7a6f341eb938773283e4e058e" style="width: 100.0%; height: 100.0%;">             Game 15: White Sox @ Royals<br>             Kauffman Stadium, Kansas City<br>             Wednesday, September 12, 2018 - 08:15 PM                         </div>')[0];
-                popup_64d40f18e477454c9bd8bc4b0aa04aa4.setContent(html_4f39d8a7a6f341eb938773283e4e058e);
+                var html_b9c69aa0f65b47029acb8a5c409818ac = $(`<div id="html_b9c69aa0f65b47029acb8a5c409818ac" style="width: 100.0%; height: 100.0%;">         Game 15: Dodgers @ Rockies<br>         Coors Field, Denver<br>         2019-07-29 20:40:00                     </div>`)[0];
+                popup_ed63422f065b49edb5308197497e41ae.setContent(html_b9c69aa0f65b47029acb8a5c409818ac);
             
 
-            marker_7077cf7ea2d14405a17a8349132b193e.bindPopup(popup_64d40f18e477454c9bd8bc4b0aa04aa4);
+            marker_699271b2604448c0a29b64dd7b8533c9.bindPopup(popup_ed63422f065b49edb5308197497e41ae)
+            ;
 
             
         
     
-
-            var marker_895d2d0f107d4166b4a283835792b973 = L.marker(
-                [40.75708770000001,-73.8458213],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_e717f533096642cbb979344d4eea9ad0 = L.marker(
+            [39.09724845, -84.50662388925079],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_a00d97f5b3b94eba9217c39336cd258a = L.divIcon({
+                var div_icon_0e21664989f84ea4977d22b5c5dcdee2 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">16</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">16</strong>`,
                     });
-                marker_895d2d0f107d4166b4a283835792b973.setIcon(div_icon_a00d97f5b3b94eba9217c39336cd258a);
+                marker_e717f533096642cbb979344d4eea9ad0.setIcon(div_icon_0e21664989f84ea4977d22b5c5dcdee2);
             
     
-            var popup_80ade4ff57774d399348ed08fb79791c = L.popup({maxWidth: '300'});
+            var popup_68313d54aff94060a5a8e04a7687fdfa = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_c09fbfd2db384ed9a81ea37fe7bca1c8 = $('<div id="html_c09fbfd2db384ed9a81ea37fe7bca1c8" style="width: 100.0%; height: 100.0%;">             Game 16: Marlins @ Mets<br>             Citi Field, Flushing<br>             Thursday, September 13, 2018 - 07:10 PM                         </div>')[0];
-                popup_80ade4ff57774d399348ed08fb79791c.setContent(html_c09fbfd2db384ed9a81ea37fe7bca1c8);
+                var html_af91b65cb4564f46b2ecbfdf2920252d = $(`<div id="html_af91b65cb4564f46b2ecbfdf2920252d" style="width: 100.0%; height: 100.0%;">         Game 16: Pirates @ Reds<br>         Great American Ball Park, Cincinnati<br>         2019-07-30 19:10:00                     </div>`)[0];
+                popup_68313d54aff94060a5a8e04a7687fdfa.setContent(html_af91b65cb4564f46b2ecbfdf2920252d);
             
 
-            marker_895d2d0f107d4166b4a283835792b973.bindPopup(popup_80ade4ff57774d399348ed08fb79791c);
+            marker_e717f533096642cbb979344d4eea9ad0.bindPopup(popup_68313d54aff94060a5a8e04a7687fdfa)
+            ;
 
             
         
     
-
-            var marker_e8f954df1da34b01b19c3bd7af201b25 = L.marker(
-                [41.94843839999999,-87.6553327],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_c9c6a2d665a249d2b7283266f6edbeb3 = L.marker(
+            [38.87272835, -77.00837209805121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_5a71ee2851504f9ea70f713e5bc29afa = L.divIcon({
+                var div_icon_13dd730d6d88467ebfcc485d1daa334d = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">17</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">17</strong>`,
                     });
-                marker_e8f954df1da34b01b19c3bd7af201b25.setIcon(div_icon_5a71ee2851504f9ea70f713e5bc29afa);
+                marker_c9c6a2d665a249d2b7283266f6edbeb3.setIcon(div_icon_13dd730d6d88467ebfcc485d1daa334d);
             
     
-            var popup_6469fea0e5564aa281d98d0ddaa3fc95 = L.popup({maxWidth: '300'});
+            var popup_e44249631fff45eea68b71fd0f3b0102 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_61d7738c35ea459b956dc79ad82dacfb = $('<div id="html_61d7738c35ea459b956dc79ad82dacfb" style="width: 100.0%; height: 100.0%;">             Game 17: Reds @ Cubs<br>             Wrigley Field, Chicago<br>             Friday, September 14, 2018 - 02:20 PM                         </div>')[0];
-                popup_6469fea0e5564aa281d98d0ddaa3fc95.setContent(html_61d7738c35ea459b956dc79ad82dacfb);
+                var html_d83ed01539c141b8970417d675936fd2 = $(`<div id="html_d83ed01539c141b8970417d675936fd2" style="width: 100.0%; height: 100.0%;">         Game 17: Braves @ Nationals<br>         Nationals Park, Washington<br>         2019-07-31 12:05:00                     </div>`)[0];
+                popup_e44249631fff45eea68b71fd0f3b0102.setContent(html_d83ed01539c141b8970417d675936fd2);
             
 
-            marker_e8f954df1da34b01b19c3bd7af201b25.bindPopup(popup_6469fea0e5564aa281d98d0ddaa3fc95);
+            marker_c9c6a2d665a249d2b7283266f6edbeb3.bindPopup(popup_e44249631fff45eea68b71fd0f3b0102)
+            ;
 
             
         
     
-
-            var marker_1cd20fb0242649b6808918bb61aa6c99 = L.marker(
-                [43.0279776,-87.97115040000001],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_15b63b1ce1ed47e68d0af49c30bf25b7 = L.marker(
+            [25.778247399999998, -80.21980500744199],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_af05bfdcd11a4b1f91bb67e0d6c73cc2 = L.divIcon({
+                var div_icon_d862d1e2eaa444719195bac8bd1002e9 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">18</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">18</strong>`,
                     });
-                marker_1cd20fb0242649b6808918bb61aa6c99.setIcon(div_icon_af05bfdcd11a4b1f91bb67e0d6c73cc2);
+                marker_15b63b1ce1ed47e68d0af49c30bf25b7.setIcon(div_icon_d862d1e2eaa444719195bac8bd1002e9);
             
     
-            var popup_73833467285c4bb5af747576e995ae89 = L.popup({maxWidth: '300'});
+            var popup_a642b8aae698487db77f540029f53348 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_8f779d7687f74fc8bebba6f2eaf12cdc = $('<div id="html_8f779d7687f74fc8bebba6f2eaf12cdc" style="width: 100.0%; height: 100.0%;">             Game 18: Pirates @ Brewers<br>             Miller Park, Milwaukee<br>             Friday, September 14, 2018 - 08:10 PM                         </div>')[0];
-                popup_73833467285c4bb5af747576e995ae89.setContent(html_8f779d7687f74fc8bebba6f2eaf12cdc);
+                var html_7dd952b114c241c5a6242d409c52e806 = $(`<div id="html_7dd952b114c241c5a6242d409c52e806" style="width: 100.0%; height: 100.0%;">         Game 18: Twins @ Marlins<br>         Marlins Park, Miami<br>         2019-08-01 12:10:00                     </div>`)[0];
+                popup_a642b8aae698487db77f540029f53348.setContent(html_7dd952b114c241c5a6242d409c52e806);
             
 
-            marker_1cd20fb0242649b6808918bb61aa6c99.bindPopup(popup_73833467285c4bb5af747576e995ae89);
+            marker_15b63b1ce1ed47e68d0af49c30bf25b7.bindPopup(popup_a642b8aae698487db77f540029f53348)
+            ;
 
             
         
     
-
-            var marker_28b1e83c48784c7f8c9c6cff52e42ad3 = L.marker(
-                [42.3466764,-71.0972178],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_3b894dee022b49a6b491e6f75cf9895a = L.marker(
+            [32.7513904, -97.0834764998413],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_3e7075a64435448ea0c98d75ed089c89 = L.divIcon({
+                var div_icon_dfe3b178667a412b93900e614ac0fbb5 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">19</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">19</strong>`,
                     });
-                marker_28b1e83c48784c7f8c9c6cff52e42ad3.setIcon(div_icon_3e7075a64435448ea0c98d75ed089c89);
+                marker_3b894dee022b49a6b491e6f75cf9895a.setIcon(div_icon_dfe3b178667a412b93900e614ac0fbb5);
             
     
-            var popup_6c575dbc173a49bb84e857f92260da5b = L.popup({maxWidth: '300'});
+            var popup_233f873f4ae6410c8dddec4fc09b1211 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_f2dda776716247f09e190a9635d0ee92 = $('<div id="html_f2dda776716247f09e190a9635d0ee92" style="width: 100.0%; height: 100.0%;">             Game 19: Mets @ Red Sox<br>             Fenway Park, Boston<br>             Saturday, September 15, 2018 - 04:05 PM                         </div>')[0];
-                popup_6c575dbc173a49bb84e857f92260da5b.setContent(html_f2dda776716247f09e190a9635d0ee92);
+                var html_bc3f73a315c840f4b33fac256a7809ed = $(`<div id="html_bc3f73a315c840f4b33fac256a7809ed" style="width: 100.0%; height: 100.0%;">         Game 19: Tigers @ Rangers<br>         Globe Life Park in Arlington, Arlington<br>         2019-08-02 20:05:00                     </div>`)[0];
+                popup_233f873f4ae6410c8dddec4fc09b1211.setContent(html_bc3f73a315c840f4b33fac256a7809ed);
             
 
-            marker_28b1e83c48784c7f8c9c6cff52e42ad3.bindPopup(popup_6c575dbc173a49bb84e857f92260da5b);
+            marker_3b894dee022b49a6b491e6f75cf9895a.bindPopup(popup_233f873f4ae6410c8dddec4fc09b1211)
+            ;
 
             
         
     
-
-            var marker_3aa004605d834c25b8103463220d1cfb = L.marker(
-                [33.8907854,-84.4677714],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_f85fdf1496764c53aab818c5563d2978 = L.marker(
+            [40.446925799999995, -80.005606266122],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_171fa89bca77441abbac3dffc1cbee6b = L.divIcon({
+                var div_icon_27c80403b9b34476a1ee7ee57a976c6d = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">20</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">20</strong>`,
                     });
-                marker_3aa004605d834c25b8103463220d1cfb.setIcon(div_icon_171fa89bca77441abbac3dffc1cbee6b);
+                marker_f85fdf1496764c53aab818c5563d2978.setIcon(div_icon_27c80403b9b34476a1ee7ee57a976c6d);
             
     
-            var popup_217594014066428aaf44fdcb4646c3c5 = L.popup({maxWidth: '300'});
+            var popup_02638d8e61bf4c1392913d0d5e7d5e13 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_2476dea6c1a14887b271c61b59055db0 = $('<div id="html_2476dea6c1a14887b271c61b59055db0" style="width: 100.0%; height: 100.0%;">             Game 20: Nationals @ Braves<br>             SunTrust Park, Atlanta<br>             Sunday, September 16, 2018 - 01:35 PM                         </div>')[0];
-                popup_217594014066428aaf44fdcb4646c3c5.setContent(html_2476dea6c1a14887b271c61b59055db0);
+                var html_29c9a788847a4b3e85a5996304a54521 = $(`<div id="html_29c9a788847a4b3e85a5996304a54521" style="width: 100.0%; height: 100.0%;">         Game 20: Mets @ Pirates<br>         PNC Park, Pittsburgh<br>         2019-08-03 19:05:00                     </div>`)[0];
+                popup_02638d8e61bf4c1392913d0d5e7d5e13.setContent(html_29c9a788847a4b3e85a5996304a54521);
             
 
-            marker_3aa004605d834c25b8103463220d1cfb.bindPopup(popup_217594014066428aaf44fdcb4646c3c5);
+            marker_f85fdf1496764c53aab818c5563d2978.bindPopup(popup_02638d8e61bf4c1392913d0d5e7d5e13)
+            ;
 
             
         
     
-
-            var marker_b4a2bc8d65ea42c0bd3ed0805e5c154c = L.marker(
-                [39.2834958,-76.62191640000002],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_2727c8999b7a4d748ac01307fc5aaa5f = L.marker(
+            [39.90588575, -75.1654110174725],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_30525f1bf72e4e38876096832d8c880b = L.divIcon({
+                var div_icon_3a6afca4547a4aff9f98b18e95c84a77 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">21</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">21</strong>`,
                     });
-                marker_b4a2bc8d65ea42c0bd3ed0805e5c154c.setIcon(div_icon_30525f1bf72e4e38876096832d8c880b);
+                marker_2727c8999b7a4d748ac01307fc5aaa5f.setIcon(div_icon_3a6afca4547a4aff9f98b18e95c84a77);
             
     
-            var popup_56497ccca5404a0fa7ddd8d813244abf = L.popup({maxWidth: '300'});
+            var popup_d7a042af2b01429f87efc46ab6579caf = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_3b73b03ae42f4170ac5e1137c24ce206 = $('<div id="html_3b73b03ae42f4170ac5e1137c24ce206" style="width: 100.0%; height: 100.0%;">             Game 21: Blue Jays @ Orioles<br>             Oriole Park at Camden Yards, Baltimore<br>             Monday, September 17, 2018 - 07:05 PM                         </div>')[0];
-                popup_56497ccca5404a0fa7ddd8d813244abf.setContent(html_3b73b03ae42f4170ac5e1137c24ce206);
+                var html_3ad3e82c0fbd454e80deeb3491610b09 = $(`<div id="html_3ad3e82c0fbd454e80deeb3491610b09" style="width: 100.0%; height: 100.0%;">         Game 21: White Sox @ Phillies<br>         Citizens Bank Park, Philadelphia<br>         2019-08-04 13:05:00                     </div>`)[0];
+                popup_d7a042af2b01429f87efc46ab6579caf.setContent(html_3ad3e82c0fbd454e80deeb3491610b09);
             
 
-            marker_b4a2bc8d65ea42c0bd3ed0805e5c154c.bindPopup(popup_56497ccca5404a0fa7ddd8d813244abf);
+            marker_2727c8999b7a4d748ac01307fc5aaa5f.bindPopup(popup_d7a042af2b01429f87efc46ab6579caf)
+            ;
 
             
         
     
-
-            var marker_88778b689e5d4bcbadbdde94df3e188c = L.marker(
-                [40.82964260000001,-73.9261745],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_19d6b4cc26b84f4090527dcb6169c240 = L.marker(
+            [40.82958275, -73.92652118491901],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_7515f0b052664c84875b5c48bbbf6620 = L.divIcon({
+                var div_icon_1edcaba34d4f49c0ac18250fdd42a844 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">22</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">22</strong>`,
                     });
-                marker_88778b689e5d4bcbadbdde94df3e188c.setIcon(div_icon_7515f0b052664c84875b5c48bbbf6620);
+                marker_19d6b4cc26b84f4090527dcb6169c240.setIcon(div_icon_1edcaba34d4f49c0ac18250fdd42a844);
             
     
-            var popup_b2971ae333f44c9ab48ac2c2e89bc8f8 = L.popup({maxWidth: '300'});
+            var popup_61d0231eb356457db699a99e2855a1ff = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_1bb972347cc8489da01bbb2fec5607c6 = $('<div id="html_1bb972347cc8489da01bbb2fec5607c6" style="width: 100.0%; height: 100.0%;">             Game 22: Red Sox @ Yankees<br>             Yankee Stadium, Bronx<br>             Tuesday, September 18, 2018 - 01:05 PM                         </div>')[0];
-                popup_b2971ae333f44c9ab48ac2c2e89bc8f8.setContent(html_1bb972347cc8489da01bbb2fec5607c6);
+                var html_d4ce772c63104e9a802c021a31ecf5b5 = $(`<div id="html_d4ce772c63104e9a802c021a31ecf5b5" style="width: 100.0%; height: 100.0%;">         Game 22: Red Sox @ Yankees<br>         Yankee Stadium, Bronx<br>         2019-08-04 19:05:00                     </div>`)[0];
+                popup_61d0231eb356457db699a99e2855a1ff.setContent(html_d4ce772c63104e9a802c021a31ecf5b5);
             
 
-            marker_88778b689e5d4bcbadbdde94df3e188c.bindPopup(popup_b2971ae333f44c9ab48ac2c2e89bc8f8);
+            marker_19d6b4cc26b84f4090527dcb6169c240.bindPopup(popup_61d0231eb356457db699a99e2855a1ff)
+            ;
 
             
         
     
-
-            var marker_6bf5cf83095744b0886ca337828f327c = L.marker(
-                [39.906057200000006,-75.1664952],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_b1d98ffc5af24c81aad41422742f4f83 = L.marker(
+            [39.2839823, -76.6224914986542],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_c3cc63abd2504a048ffdd9703c8aaaa8 = L.divIcon({
+                var div_icon_7d83fe76d7aa4f2b815fb203f6aee38f = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">23</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">23</strong>`,
                     });
-                marker_6bf5cf83095744b0886ca337828f327c.setIcon(div_icon_c3cc63abd2504a048ffdd9703c8aaaa8);
+                marker_b1d98ffc5af24c81aad41422742f4f83.setIcon(div_icon_7d83fe76d7aa4f2b815fb203f6aee38f);
             
     
-            var popup_8b9b2e8d28254eb8917a2b35271bc0b3 = L.popup({maxWidth: '300'});
+            var popup_499e69368fa84299a8773f64b372fa68 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_bbb61de7ed5046638f85b00500564d6c = $('<div id="html_bbb61de7ed5046638f85b00500564d6c" style="width: 100.0%; height: 100.0%;">             Game 23: Mets @ Phillies<br>             Citizens Bank Park, Philadelphia<br>             Tuesday, September 18, 2018 - 07:05 PM                         </div>')[0];
-                popup_8b9b2e8d28254eb8917a2b35271bc0b3.setContent(html_bbb61de7ed5046638f85b00500564d6c);
+                var html_bdc87de8aea141cf979a5ffd247ee827 = $(`<div id="html_bdc87de8aea141cf979a5ffd247ee827" style="width: 100.0%; height: 100.0%;">         Game 23: Yankees @ Orioles<br>         Oriole Park at Camden Yards, Baltimore<br>         2019-08-05 19:05:00                     </div>`)[0];
+                popup_499e69368fa84299a8773f64b372fa68.setContent(html_bdc87de8aea141cf979a5ffd247ee827);
             
 
-            marker_6bf5cf83095744b0886ca337828f327c.bindPopup(popup_8b9b2e8d28254eb8917a2b35271bc0b3);
+            marker_b1d98ffc5af24c81aad41422742f4f83.bindPopup(popup_499e69368fa84299a8773f64b372fa68)
+            ;
 
             
         
     
-
-            var marker_891c31e26ca84967a1e5416e3db39b64 = L.marker(
-                [42.3389984,-83.0485197],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_6f2ab2df837a4337bb268a8f42dfae54 = L.marker(
+            [42.33915895, -83.0496353454506],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_91198535b9034f3faa1a45fc4a4e1193 = L.divIcon({
+                var div_icon_5fa473943ce44532995149b1ece892ea = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">24</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">24</strong>`,
                     });
-                marker_891c31e26ca84967a1e5416e3db39b64.setIcon(div_icon_91198535b9034f3faa1a45fc4a4e1193);
+                marker_6f2ab2df837a4337bb268a8f42dfae54.setIcon(div_icon_5fa473943ce44532995149b1ece892ea);
             
     
-            var popup_0c32f79cf5464b1287cd17f09e95d763 = L.popup({maxWidth: '300'});
+            var popup_831b4b96d45d47888753553bffec3b66 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_af386198ac304cb2aa35d8bc5d5bf25d = $('<div id="html_af386198ac304cb2aa35d8bc5d5bf25d" style="width: 100.0%; height: 100.0%;">             Game 24: Twins @ Tigers<br>             Comerica Park, Detroit<br>             Wednesday, September 19, 2018 - 01:10 PM                         </div>')[0];
-                popup_0c32f79cf5464b1287cd17f09e95d763.setContent(html_af386198ac304cb2aa35d8bc5d5bf25d);
+                var html_3207f0f7ce6c48c1b4daa881f9da5a86 = $(`<div id="html_3207f0f7ce6c48c1b4daa881f9da5a86" style="width: 100.0%; height: 100.0%;">         Game 24: White Sox @ Tigers<br>         Comerica Park, Detroit<br>         2019-08-06 13:10:00                     </div>`)[0];
+                popup_831b4b96d45d47888753553bffec3b66.setContent(html_3207f0f7ce6c48c1b4daa881f9da5a86);
             
 
-            marker_891c31e26ca84967a1e5416e3db39b64.bindPopup(popup_0c32f79cf5464b1287cd17f09e95d763);
+            marker_6f2ab2df837a4337bb268a8f42dfae54.bindPopup(popup_831b4b96d45d47888753553bffec3b66)
+            ;
 
             
         
     
-
-            var marker_f602646929194d3ab1e7efa1e94f65a5 = L.marker(
-                [41.496210999999995,-81.68522890000001],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_6eeb3d4357ff4ac99b0f80332f365c80 = L.marker(
+            [41.4960144, -81.68420022215649],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_baf14384fa164eca900855e41e407006 = L.divIcon({
+                var div_icon_c6cf6d0232264fd4a624e7cb73ebc39c = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">25</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">25</strong>`,
                     });
-                marker_f602646929194d3ab1e7efa1e94f65a5.setIcon(div_icon_baf14384fa164eca900855e41e407006);
+                marker_6eeb3d4357ff4ac99b0f80332f365c80.setIcon(div_icon_c6cf6d0232264fd4a624e7cb73ebc39c);
             
     
-            var popup_b163b18f5c5347c7bc3ef5cff7d0e043 = L.popup({maxWidth: '300'});
+            var popup_37ce6baa5dc8400ead2a66a105e0803a = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_f162bde2e75c4930b13315231e89bc6a = $('<div id="html_f162bde2e75c4930b13315231e89bc6a" style="width: 100.0%; height: 100.0%;">             Game 25: White Sox @ Indians<br>             Progressive Field, Cleveland<br>             Wednesday, September 19, 2018 - 07:10 PM                         </div>')[0];
-                popup_b163b18f5c5347c7bc3ef5cff7d0e043.setContent(html_f162bde2e75c4930b13315231e89bc6a);
+                var html_6fbbd227e9884c908a711bc30867c32c = $(`<div id="html_6fbbd227e9884c908a711bc30867c32c" style="width: 100.0%; height: 100.0%;">         Game 25: Rangers @ Indians<br>         Progressive Field, Cleveland<br>         2019-08-06 19:10:00                     </div>`)[0];
+                popup_37ce6baa5dc8400ead2a66a105e0803a.setContent(html_6fbbd227e9884c908a711bc30867c32c);
             
 
-            marker_f602646929194d3ab1e7efa1e94f65a5.bindPopup(popup_b163b18f5c5347c7bc3ef5cff7d0e043);
+            marker_6eeb3d4357ff4ac99b0f80332f365c80.bindPopup(popup_37ce6baa5dc8400ead2a66a105e0803a)
+            ;
 
             
         
     
-
-            var marker_64c139065816461e865ca4aa1a17beb1 = L.marker(
-                [25.7783176,-80.219597],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_ee571d6ee8d64ee9927ce9e955259263 = L.marker(
+            [40.75727785, -73.8458788494242],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_7d8af7c256a2400ba32a5b2e9bc2b0c4 = L.divIcon({
+                var div_icon_aa29095605ee4715b5006004cc143f73 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">26</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">26</strong>`,
                     });
-                marker_64c139065816461e865ca4aa1a17beb1.setIcon(div_icon_7d8af7c256a2400ba32a5b2e9bc2b0c4);
+                marker_ee571d6ee8d64ee9927ce9e955259263.setIcon(div_icon_aa29095605ee4715b5006004cc143f73);
             
     
-            var popup_165307817903423dab107b0eb7c6e9e5 = L.popup({maxWidth: '300'});
+            var popup_a4f20babc34b4183b8395bc822c4095d = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_2b9acde704de4297b84c3f8ab43b9a05 = $('<div id="html_2b9acde704de4297b84c3f8ab43b9a05" style="width: 100.0%; height: 100.0%;">             Game 26: Reds @ Marlins<br>             Marlins Park, Miami<br>             Thursday, September 20, 2018 - 07:10 PM                         </div>')[0];
-                popup_165307817903423dab107b0eb7c6e9e5.setContent(html_2b9acde704de4297b84c3f8ab43b9a05);
+                var html_80fd20ad4e334328808de37dfc7161ad = $(`<div id="html_80fd20ad4e334328808de37dfc7161ad" style="width: 100.0%; height: 100.0%;">         Game 26: Marlins @ Mets<br>         Citi Field, Flushing<br>         2019-08-07 12:10:00                     </div>`)[0];
+                popup_a4f20babc34b4183b8395bc822c4095d.setContent(html_80fd20ad4e334328808de37dfc7161ad);
             
 
-            marker_64c139065816461e865ca4aa1a17beb1.bindPopup(popup_165307817903423dab107b0eb7c6e9e5);
+            marker_ee571d6ee8d64ee9927ce9e955259263.bindPopup(popup_a4f20babc34b4183b8395bc822c4095d)
+            ;
 
             
         
     
-
-            var marker_5d50bb99e97d43408034fcb3e5829517 = L.marker(
-                [29.757269399999995,-95.3555143],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_a0b98d8329c24f06b206fcccbaa3ef99 = L.marker(
+            [42.34648975, -71.0972244184537],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_cf750b69adde46b99e0eea708d69d9c0 = L.divIcon({
+                var div_icon_7e50ae3b59d241cabe2b4486700df160 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">27</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">27</strong>`,
                     });
-                marker_5d50bb99e97d43408034fcb3e5829517.setIcon(div_icon_cf750b69adde46b99e0eea708d69d9c0);
+                marker_a0b98d8329c24f06b206fcccbaa3ef99.setIcon(div_icon_7e50ae3b59d241cabe2b4486700df160);
             
     
-            var popup_3d2ae10b3bf8496c9ce1553f799c3157 = L.popup({maxWidth: '300'});
+            var popup_d37664cc9c9b4434b888dfb5967214f5 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_f560d1a9c350420682b31b262b459cea = $('<div id="html_f560d1a9c350420682b31b262b459cea" style="width: 100.0%; height: 100.0%;">             Game 27: Angels @ Astros<br>             Minute Maid Park, Houston<br>             Friday, September 21, 2018 - 08:10 PM                         </div>')[0];
-                popup_3d2ae10b3bf8496c9ce1553f799c3157.setContent(html_f560d1a9c350420682b31b262b459cea);
+                var html_7b75d6eb5c0c48788daa56302e67416f = $(`<div id="html_7b75d6eb5c0c48788daa56302e67416f" style="width: 100.0%; height: 100.0%;">         Game 27: Royals @ Red Sox<br>         Fenway Park, Boston<br>         2019-08-07 19:10:00                     </div>`)[0];
+                popup_d37664cc9c9b4434b888dfb5967214f5.setContent(html_7b75d6eb5c0c48788daa56302e67416f);
             
 
-            marker_5d50bb99e97d43408034fcb3e5829517.bindPopup(popup_3d2ae10b3bf8496c9ce1553f799c3157);
+            marker_a0b98d8329c24f06b206fcccbaa3ef99.bindPopup(popup_d37664cc9c9b4434b888dfb5967214f5)
+            ;
 
             
         
     
-
-            var marker_ee0a813784144584985e3000e67026ba = L.marker(
-                [33.4455264,-112.06666409999998],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_d217c47da2854ae79a67a780623ae79d = L.marker(
+            [43.6416641, -79.3891988236638],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_02671d4563cd4cdab39c90b58c5508d0 = L.divIcon({
+                var div_icon_ea6e0569619f49999bba32ad3a4f5f01 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">28</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">28</strong>`,
                     });
-                marker_ee0a813784144584985e3000e67026ba.setIcon(div_icon_02671d4563cd4cdab39c90b58c5508d0);
+                marker_d217c47da2854ae79a67a780623ae79d.setIcon(div_icon_ea6e0569619f49999bba32ad3a4f5f01);
             
     
-            var popup_01a6f89e4a164756a3100d3578dc22b7 = L.popup({maxWidth: '300'});
+            var popup_54672ea49ec7467180de8e11a571f8ae = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_cefdc387da22481a9368cc2ebd113e5c = $('<div id="html_cefdc387da22481a9368cc2ebd113e5c" style="width: 100.0%; height: 100.0%;">             Game 28: Rockies @ Diamondbacks<br>             Chase Field, Phoenix<br>             Saturday, September 22, 2018 - 08:10 PM                         </div>')[0];
-                popup_01a6f89e4a164756a3100d3578dc22b7.setContent(html_cefdc387da22481a9368cc2ebd113e5c);
+                var html_0ace9668a7ce4a5da44559b8fbdeab8e = $(`<div id="html_0ace9668a7ce4a5da44559b8fbdeab8e" style="width: 100.0%; height: 100.0%;">         Game 28: Yankees @ Blue Jays<br>         Rogers Centre, Toronto<br>         2019-08-08 19:07:00                     </div>`)[0];
+                popup_54672ea49ec7467180de8e11a571f8ae.setContent(html_0ace9668a7ce4a5da44559b8fbdeab8e);
             
 
-            marker_ee0a813784144584985e3000e67026ba.bindPopup(popup_01a6f89e4a164756a3100d3578dc22b7);
+            marker_d217c47da2854ae79a67a780623ae79d.bindPopup(popup_54672ea49ec7467180de8e11a571f8ae)
+            ;
 
             
         
     
-
-            var marker_93eb1dd787ff4e44ba46e1ea4d669514 = L.marker(
-                [32.7512152,-97.083209],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_dc4d04cda2b6425d8e256f2dbcf59f1f = L.marker(
+            [41.82982395, -87.6336247432872],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_a6133c75a82e400d9403475430b4da13 = L.divIcon({
+                var div_icon_6e2825cf78aa441099b629af0672ef1d = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">29</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">29</strong>`,
                     });
-                marker_93eb1dd787ff4e44ba46e1ea4d669514.setIcon(div_icon_a6133c75a82e400d9403475430b4da13);
+                marker_dc4d04cda2b6425d8e256f2dbcf59f1f.setIcon(div_icon_6e2825cf78aa441099b629af0672ef1d);
             
     
-            var popup_abf17c638d0742b7969b27258cce703f = L.popup({maxWidth: '300'});
+            var popup_5adeb7d809384326a12b57ec7ded5e91 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_a35a685bd14a46e6b02da744a41b9d54 = $('<div id="html_a35a685bd14a46e6b02da744a41b9d54" style="width: 100.0%; height: 100.0%;">             Game 29: Mariners @ Rangers<br>             Globe Life Park in Arlington, Arlington<br>             Sunday, September 23, 2018 - 03:05 PM                         </div>')[0];
-                popup_abf17c638d0742b7969b27258cce703f.setContent(html_a35a685bd14a46e6b02da744a41b9d54);
+                var html_613fcf264cee422a88c848e2b0bc910d = $(`<div id="html_613fcf264cee422a88c848e2b0bc910d" style="width: 100.0%; height: 100.0%;">         Game 29: Athletics @ White Sox<br>         Guaranteed Rate Field, Chicago<br>         2019-08-09 15:10:00                     </div>`)[0];
+                popup_5adeb7d809384326a12b57ec7ded5e91.setContent(html_613fcf264cee422a88c848e2b0bc910d);
             
 
-            marker_93eb1dd787ff4e44ba46e1ea4d669514.bindPopup(popup_abf17c638d0742b7969b27258cce703f);
+            marker_dc4d04cda2b6425d8e256f2dbcf59f1f.bindPopup(popup_5adeb7d809384326a12b57ec7ded5e91)
+            ;
 
             
         
     
-
-            var marker_129c52d7728b497d9f99dcb6b135c34f = L.marker(
-                [33.800308,-117.8827321],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
-            
+        var marker_fbae13793c2345e9b9fe19718679d8c4 = L.marker(
+            [43.0280604, -87.9720970118964],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
+        
     
 
-                var div_icon_7fb7a7f96890480bad9d0c844079c622 = L.divIcon({
+                var div_icon_6f441e406eb441b581c6932f1089aad9 = L.divIcon({
                     
                     
                     
                     className: 'empty',
-                    html: '<i class="fa fa-map-pin fa-stack-2x" style="font-size:28px"></i><strong style="text-align: center; color: white; font-family: Helvetica Neue, Helvetica, Arial; font-size:12px; width:16px;" class="fa-stack-1x">30</strong>',
+                    html: `<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">30</strong>`,
                     });
-                marker_129c52d7728b497d9f99dcb6b135c34f.setIcon(div_icon_7fb7a7f96890480bad9d0c844079c622);
+                marker_fbae13793c2345e9b9fe19718679d8c4.setIcon(div_icon_6f441e406eb441b581c6932f1089aad9);
             
     
-            var popup_919a798a30214d06a1b2fa9062410f71 = L.popup({maxWidth: '300'});
+            var popup_e457c91a05e14f6ab83559346296ac47 = L.popup({maxWidth: '100%'
+            
+            });
 
             
-                var html_b0840b965d494430a7db2bbbb50d6d26 = $('<div id="html_b0840b965d494430a7db2bbbb50d6d26" style="width: 100.0%; height: 100.0%;">             Game 30: Rangers @ Angels<br>             Angel Stadium of Anaheim, Anaheim<br>             Monday, September 24, 2018 - 10:07 PM                         </div>')[0];
-                popup_919a798a30214d06a1b2fa9062410f71.setContent(html_b0840b965d494430a7db2bbbb50d6d26);
+                var html_38ae7f2f5b7342889ec7230c30293cb9 = $(`<div id="html_38ae7f2f5b7342889ec7230c30293cb9" style="width: 100.0%; height: 100.0%;">         Game 30: Rangers @ Brewers<br>         Miller Park, Milwaukee<br>         2019-08-09 20:10:00                     </div>`)[0];
+                popup_e457c91a05e14f6ab83559346296ac47.setContent(html_38ae7f2f5b7342889ec7230c30293cb9);
             
 
-            marker_129c52d7728b497d9f99dcb6b135c34f.bindPopup(popup_919a798a30214d06a1b2fa9062410f71);
+            marker_fbae13793c2345e9b9fe19718679d8c4.bindPopup(popup_e457c91a05e14f6ab83559346296ac47)
+            ;
 
             
         
     
-                var poly_line_2c7ec418b7dd465aa525fd217725d272 = L.polyline(
-                    [[32.707656300000004, -117.15690430000001], [37.7785951, -122.38926979999998], [37.7515946, -122.20054579999999], [34.073851, -118.23995829999998], [47.5914026, -122.3325085], [39.755882299999996, -104.9941781], [41.8299021, -87.6337522], [43.6414378, -79.3893532], [40.4468548, -80.0056657], [27.768224600000003, -82.65339209999999], [38.8730102, -77.0074329], [39.0979313, -84.508151], [44.9817656, -93.277514], [38.6226188, -90.1928209], [39.051671899999995, -94.4803142], [40.75708770000001, -73.8458213], [41.94843839999999, -87.6553327], [43.0279776, -87.97115040000001], [42.3466764, -71.0972178], [33.8907854, -84.4677714], [39.2834958, -76.62191640000002], [40.82964260000001, -73.9261745], [39.906057200000006, -75.1664952], [42.3389984, -83.0485197], [41.496210999999995, -81.68522890000001], [25.7783176, -80.219597], [29.757269399999995, -95.3555143], [33.4455264, -112.06666409999998], [32.7512152, -97.083209], [33.800308, -117.8827321]],
+                var poly_line_110a70a4a1c64d79b6d5266d3c6bfb69 = L.polyline(
+                    [[44.9817039, -93.2778457595517], [38.62252705, -90.1939328538991], [39.05144525, -94.48047131020269], [33.83735535, -84.3816622483595], [41.9481283, -87.65636056216721], [27.7680752, -82.6532767848705], [29.75723205, -95.35523391491141], [33.44548555, -112.066692832931], [37.7781634, -122.38755900000001], [34.07455235, -118.240048057792], [33.8002599, -117.881742627598], [47.5914138, -122.33202253168501], [37.752263899999996, -122.19795559999999], [32.70718815, -117.156877452906], [39.756031400000005, -104.992928555315], [39.09724845, -84.50662388925079], [38.87272835, -77.00837209805121], [25.778247399999998, -80.21980500744199], [32.7513904, -97.0834764998413], [40.446925799999995, -80.005606266122], [39.90588575, -75.1654110174725], [40.82958275, -73.92652118491901], [39.2839823, -76.6224914986542], [42.33915895, -83.0496353454506], [41.4960144, -81.68420022215649], [40.75727785, -73.8458788494242], [42.34648975, -71.0972244184537], [43.6416641, -79.3891988236638], [41.82982395, -87.6336247432872], [43.0280604, -87.9720970118964]],
                     {
   "bubblingMouseEvents": true,
   "color": "#3388ff",
@@ -1070,6 +1101,8 @@
   "smoothFactor": 1.0,
   "stroke": true,
   "weight": 3
-}).addTo(map_1ecb3ca59a6b4ece8131b1d3033eab0b);
+}
+                    )
+                    .addTo(map_20d1066d839a43b9a8efe74c82f40b8c);
             
 </script>

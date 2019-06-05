@@ -238,11 +238,6 @@ def tbfp(distance_data, game_data, venue_data,
         c_game = g
 
     print('Total time: {}'.format(end[schedule[-1]] - start[schedule[0]]))
-    
-    # Optional, plot results
-    if False:  # disabled
-        from map import plot_tbf
-        plot_tbf(route, name=str(id(m)))
 
     # Save the resulting schedules and information into a file for notebook
     n_months = (end_date-start_date).total_seconds()/(60.0*60.0*24*30)
