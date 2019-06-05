@@ -8,28 +8,32 @@ javascript library. The same code is also used in Jupyter notebook.
 
 import os, glob
 import folium
+import datetime
 
 
 def plot_tbf(route, name='latest'):
     # Start map centered in US
-    tbfmap = folium.Map(location=[39.82, -98.58], zoom_start=5, tiles="OpenStreetMap")
+    tbfmap = folium.Map(location=[39.82, -98.58], zoom_start=4, tiles="OpenStreetMap")
     # Define the popup markers
     for node in route:
         print(node)
-        popup_text = '''
+        dt = datetime.datetime.strptime(node[5], '%Y-%m-%d %H:%M:%S')
+        dt_text = dt.strftime("%A, %B %d, %Y - %I:%M %p") + ' (ET)'
+        popup_text = '''<div>
         Game {}: {} @ {}<br>
         {}, {}<br>
-        {}            
+        {}</div>
         '''.format(node[0], node[2], node[3], node[1], node[4],
-                   node[5])
-        folium.Marker(location=[float(node[7]), float(node[6])],popup=popup_text,
+                   dt_text)
+        popup_html = folium.Popup(popup_text, min_width=200, max_width=250)
+        folium.Marker(location=[float(node[7]), float(node[6])], popup=popup_html,
                       icon=folium.DivIcon(html='<i class="fa fa-map-pin fa-stack-2x"></i><strong style="text-align: center; color: white; font-family: Trebuchet MS;" class="fa-stack-1x">{}</strong>'.format(node[0]))
                       ).add_to(tbfmap)
     # Add the lines between stadiums
     lines = folium.PolyLine(locations=[(float(i[7]), float(i[6])) for i in route])
     lines.add_to(tbfmap)
     # Print maps to html
-    tbfmap.save("html/{}.html".format(name))
+    tbfmap.save("maps/{}.html".format(name))
 
 
 def read_schedule(f):
